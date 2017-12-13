@@ -383,16 +383,16 @@ function onEachAdminFeature(feature, layer) {
 
 /////////////////////////////////////////////////////////////////
 
-$(document).ready(function() {
-    $("#toggle").click(function() {
-    	if ($("#form").is(":visible")) {
-    	    $("#toggle").html("+"); // html("&#8773;");
-    	    $("#toggle").css('left', '1px');
-    	}
-    	else {
-    	    $("#toggle").html("&times;");
-    	    $("#toggle").css('left', '-11px');
-    	}
-    	$("#form").toggle("fast");
-    });
-});
+// $(document).ready(function() {
+//     $("#toggle").click(function() {
+//     	if ($("#form").is(":visible")) {
+//     	    $("#toggle").html("+"); // html("&#8773;");
+//     	    $("#toggle").css('left', '1px');
+//     	}
+//     	else {
+//     	    $("#toggle").html("&times;");
+//     	    $("#toggle").css('left', '-11px');
+//     	}
+//     	$("#form").toggle("fast");
+//     });
+// });
