@@ -73,10 +73,10 @@ function update_legend_content(varname, gr) {
     var heading = varname;
     if (friendly_names[varname] != null)
 	heading = friendly_names[varname];
-    var adminLegend = "<div class=\"legendbox\" id=\"choroLegend\"><h5>" + heading + "</h5>";
+    var adminLegend = "<div class=\"legendbox\" id=\"choroLegend\"><h4>" + heading + "</h4>";
     for (var i = 0; i<gr.length-1; i++) {
     	adminLegend += '<i style="background:' + colors[i] + '"></i>' +
-            formatNumber(Math.round(gr[i+1])) + ' - ' +
+            formatNumber(Math.round(gr[i+1])) + ' &ndash; ' +
             formatNumber(Math.round(gr[i])) + '<br/>';
     }
     adminLegend += "</div>";
