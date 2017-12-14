@@ -17,54 +17,51 @@
   	background: #cccccc;
   }
 </style>
-
+<p style="text-align:center">
+    <select id="projection-menu"></select>
+    <input type="checkbox" id="pause">Pause
+    <input type="checkbox" id="land" checked>Show land
+    <input type="checkbox" id="tissot" checked>Use Tissot's Indicatrix
+    <input type="checkbox" id="gedymin">Use Gedymin faces
+</p>
 <div align="center" id="map"></div>
 
-<p style="text-align:center"><select id="projection-menu"></select>
-<input type="checkbox" id="pause">Pause
-<input type="checkbox" id="land" checked>Show land
-<input type="checkbox" id="tissot" checked>Use Tissot's Indicatrix
-<input type="checkbox" id="gedymin">Use Gedymin faces
+<p style="text-align:center">
 </p>
 
 <p>
   This page is designed to illustrate map distortion using Tissot's indicatrix
   and the Gedymin faces. This web page is based on a few important
-  sources. First, I made some changes to Jason Davis' code of
+  sources. I made some changes to Jason Davis' code of
   the <a href="https://www.jasondavies.com/maps/transition/">map projection
   transitions</a>, which has been tremendously useful. Additional projections
   (mainly conic and azimuthal) were also used in this page
   following <a href="https://github.com/mbostock/d3/wiki/Geo-Projections">these
-  examples</a>. Second, I used Matthew
+  examples</a>. I used Matthew
   T. Perry's <a href="http://blog.perrygeo.net/2005/12/11/tissot-indicatrix-examining-the-distortion-of-2d-maps/">Python
-  code</a> to create the Tissot's indicatrices in a shapefile. Third, the
-  shapefile for the faces were created
-  by <a href="http://galleryofmapprojections.com/gedymin/">Paul B. Anderson</a>
-  who also maintained a great repository for Gedymin faces.  Fourth, the
-  shapefiles were converted to <a href="http://geojson.org">GeoJSON</a>
+  code</a> to create the Tissot's indicatrices in a shapefile. The
+  shapefiles for the faces were created by <a href="http://galleryofmapprojections.com/gedymin/">Paul B. Anderson</a>
+  who also maintained a great repository for Gedymin faces. The
+  shapefiles were then converted to <a href="http://geojson.org">GeoJSON</a>
   in <a href="http://qgis.org">QGIS</a>, and then
-  to <a href="https://github.com/mbostock/topojson-specification">TopoJSON using
+  to <a href="https://github.com/mbostock/topojson-specification">TopoJSON</a> using
   a tool called <a href="">topojson</a> on Mac. The indicatrices data is
-  available
-  at <a href="https://github.com/gisalgs/data/blob/master/tissot.topojson">here</a>
-  and the faces are available
-  at <a href="https://github.com/gisalgs/data/blob/master/gedymin.topojson">here</a>. The
+  available at <a href="https://github.com/gisalgs/data/blob/master/tissot.topojson">here</a>
+  and the faces are available at <a href="https://github.com/gisalgs/data/blob/master/gedymin.topojson">here</a>. The
   world countries data is from <a href="http://www.naturalearthdata.com">Natural
   Earth</a>.  The original <a href="http://bl.ocks.org/3711652">Projection
-  Transitions</a> is made by Mike Bostock. In this version of the code,
-  transitions to the azimuthal projections still need further adjustment. If
+  Transitions</a> were made by Mike Bostock. In this version of the code,
+  transitions to and from azimuthal projections need further adjustment. If
   anybody has a fix to that, please drop me a line.
-  </p>
-
-  <p><a href="mailto:ncxiao@gmail.com">Ningchuan Xiao</a> | OCT 17 2015 | 2017 | gis.osu.edu </p>
+  [<a href="mailto:ncxiao@gmail.com">N Xiao</a> | oct 17 2015 | 2017 | github.com/ncxiao]</p>
 
   <!-- local files
   <script src="d3.min.js"></script>
   <script src="topojson.min.js"></script> -->
 
   <script src="https://d3js.org/d3.v3.min.js"></script>
-  <!-- <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script> -->
-  <script src="d3.geo.projection.min.js"></script>
+  <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
+  <!-- <script src="d3.geo.projection.min.js"></script> -->
   <script src="https://d3js.org/topojson.v2.min.js"></script>
 
   <script src="mapping.js"></script>
