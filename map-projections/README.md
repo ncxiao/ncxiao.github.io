@@ -23,3 +23,5 @@ world countries data is from [Natural Earth](http://www.naturalearthdata.com).  
 Transitions](http://bl.ocks.org/3711652) is made by Mike Bostock. In this version of the code,
 transitions to the azimuthal projections still need further adjustment. If
 anybody has a fix to that, please drop me a line.
+
+To see the actual page, click [https://ncxiao.github.io/map-projections](https://ncxiao.github.io/map-projections).
