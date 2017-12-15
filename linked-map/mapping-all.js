@@ -25,10 +25,17 @@ var Stamen_TonerLite = L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x
     maxZoom: 7
 });
 
+// CartoDB_DarkMatter
+var nightmap = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+    subdomains: 'abcd'
+});
+
 var baseMaps = {
     "OpenStreetMap B/W": osmBW,
     "OpenStreetMap": osmMapnik,
-    "Stamen Toner Lite": Stamen_TonerLite
+    "Stamen Toner Lite": Stamen_TonerLite,
+    "Night Map": nightmap
 };
 
 var layersControl = new L.Control.Layers(baseMaps, null);
@@ -39,8 +46,8 @@ var map = L.map('map', {
     zoomControl: false,
     attributionControl: false
 });
-map.setView([43, -100], 4);
-map.addLayer(osmBW, true);
+map.setView([38, -115], 4);
+map.addLayer(osmMapnik, true);
 map.addControl(layersControl)
 L.control.attribution({
     prefix: '<a href="mailto:ncxiao@gmail.com?Subject=twitter%20map" target="_top">Ningchuan Xiao</a>'}).addTo(map);
@@ -201,19 +208,22 @@ d3.json("./data/us48counties_attributes2.geojson", function(error, data) {
     	});
     	minx = vals[0];
     	maxx = vals.slice(-1)[0];
-    	if (minx<1 && minx>0)
+    	if (minx>0 && minx<1)
     	    minx = 0;
     	grades = [maxx, d3.quantile(vals, 0.67), d3.quantile(vals, 0.33), minx];
     }
 
     function update_chart(dimdata, ch, varname) {
-    	//alert(dimdata.top(1)[0].properties[varname]);
-    	step = (dimdata.top(1)[0].properties[varname] - dimdata.bottom(1)[0].properties[varname])/60
+        max0 = dimdata.top(1)[0].properties[varname];
+        min0 = dimdata.bottom(1)[0].properties[varname];
+        step = (max0 - min0)/60
     	ch.dimension(dimdata)
     	    .group(dimdata.group(function(d) {
-                return Math.floor(d / step) * step;
+                return Math.floor(d / step) * step + 1; // +1 -- the trick to include max in histogram
     	    }))
-    	    .x(d3.scale.linear().domain(d3.extent(dimdata, function(d) { return d; })))
+            // .group(group)
+    	    // .x(d3.scale.linear().domain(d3.extent(dimdata, function(d) { return d; })))
+            .x(d3.scale.linear().domain([min0, max0]))
     	    .height(180)
     	    .margins({top: 10, right: 20, bottom: 40, left: 40})
     	    .colorAccessor(function(d) { return getClassx(d.key, grades); })
@@ -221,7 +231,6 @@ d3.json("./data/us48counties_attributes2.geojson", function(error, data) {
     	    .elasticY(true)
     	    .xUnits(function(){return 45;})
                 .on("filtered", onFilt);
-
     	if (varname == current_mapping_var)
     	    ch.colors(d3.scale.linear().range(colors))
     	else
@@ -279,7 +288,7 @@ d3.json("./data/us48counties_attributes2.geojson", function(error, data) {
     // before anything, add a new member to json for feature visibility
     var n = data.features.length;
     for (i=0; i<n; i++) {
-	       data.features[i].properties["d3show01"] = 1;
+        data.features[i].properties["d3show01"] = 1;
     }
 
     alldata = data;
@@ -287,26 +296,26 @@ d3.json("./data/us48counties_attributes2.geojson", function(error, data) {
 
     // Get the attribute names in the json file
     var objectKeys = $.map(data.features[0].properties, function(value, key) {
-	if (isNaN(value) != true && key != 'd3show01' && key != 'GEO_ID')
-	    return key;
+    	if (isNaN(value) != true && key != 'd3show01' && key != 'GEO_ID')
+    	    return key;
     });
     //alert(objectKeys);
 
     function create_dropdown_list(id, varname, call_back) {
     	var ddl = d3.select(id).
-    	on("change", call_back).
-    	selectAll("option").
-    	data(objectKeys).enter().append("option").
-            attr("value", function(d) {return d;}).
-    	property("selected", function(d){
-            return d == varname;
-    	}).
-    	text(function(d) {
-    	    if (friendly_names[d]!=null)
-    		return friendly_names[d];
-    	    else
-    		return d;
-    	})
+        	on("change", call_back).
+        	selectAll("option").
+        	data(objectKeys).enter().append("option").
+                attr("value", function(d) {return d;}).
+        	property("selected", function(d){
+                return d == varname;
+        	}).
+        	text(function(d) {
+        	    if (friendly_names[d]!=null)
+                    return friendly_names[d];
+        	    else
+        		    return d;
+        	});
     	return ddl;
     }
 
@@ -344,40 +353,43 @@ d3.json("./data/us48counties_attributes2.geojson", function(error, data) {
     update_chart(dim2, chart2, chart2_var)
 
     dc.renderAll();
-
 });
 
 function onEachAdminFeature(feature, layer) {
     layer.on({
-	mouseover: function(e) {
-	    var layer = e.target;
-	    layer.setStyle({
-    		weight: 5,
-    		color: '#999',
-    		fillOpacity: 0.7
-	    });
-	    if (!L.Browser.ie && !L.Browser.opera) {
-            layer.bringToFront();
-	    }
-	    feature = layer.feature;
-	    var popupContent = "<h4>" + feature.properties.Geography + "</h4>" +
-		"<table class='info'>" +
-		"<tr><td>Total population</td><td class='num'>" + formatNumber(feature.properties.POPULATION) + "</td></tr>" +
-		"<tr><td>White</td><td class='num'>" + formatNumber(feature.properties.WHITEOPULA) + "</td></tr>" +
-		// "<tr><td>Asian</td><td class='num'>" + formatNumber(feature.properties.ASIANOPULA) + "</td></tr>" +
-		"<tr><td>Minority percent</td><td class='num'>" + feature.properties.MINORITYPC + "</td></tr>" +
-		// "<tr><td>Highschool graduates</td><td class='num'>" + feature.properties.HIGHSCH + "</td></tr>" +
-		"<tr><td>College degree percent</td><td class='num'>" + feature.properties.COLLEGEDUC + "</td></tr>" +
-		"<tr><td>Median Household Income</td><td class='num'>" + formatNumber(feature.properties.MEDHSINC) + "</td></tr>" +
-		"</table>";
-	    info.update(popupContent);
-	},
+    	mouseover: function(e) {
+    	    var layer = e.target;
+    	    layer.setStyle({
+        		weight: 5,
+        		color: '#999',
+        		fillOpacity: 0.7
+    	    });
+    	    if (!L.Browser.ie && !L.Browser.opera) {
+                layer.bringToFront();
+    	    }
+    	    feature = layer.feature;
+    	    var popupContent = "<h4>" + feature.properties.Geography + "</h4>" +
+    		"<table class='info'>" +
+    		"<tr><td>Total population</td><td class='num'>" +
+            formatNumber(feature.properties.POPULATION) +
+            "</td></tr>" + "<tr><td>White</td><td class='num'>" + formatNumber(feature.properties.WHITEOPULA) +
+            // "</td></tr>" + "<tr><td>Asian</td><td class='num'>" + formatNumber(feature.properties.ASIANOPULA) + "</td></tr>" +
+    		"<tr><td>Minority percent</td><td class='num'>" +
+            feature.properties.MINORITYPC + "</td></tr>" +
+    		// "<tr><td>Highschool graduates</td><td class='num'>" + feature.properties.HIGHSCH + "</td></tr>" +
+    		"<tr><td>College degree percent</td><td class='num'>" +
+            feature.properties.COLLEGEDUC +
+            "</td></tr>" + "<tr><td>Median Household Income</td><td class='num'>" +
+            formatNumber(feature.properties.MEDHSINC) + "</td></tr>" +
+    		"</table>";
+    	    info.update(popupContent);
+    	},
         mouseout: function(e) {
-	    uscnty.resetStyle(e.target);
-	},
-	click: function(e) {
-	    // TODO: click
-	}
+    	    uscnty.resetStyle(e.target);
+    	},
+    	click: function(e) {
+    	    // TODO if needed: click
+    	}
     });
 }
 
