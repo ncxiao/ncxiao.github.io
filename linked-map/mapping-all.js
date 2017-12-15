@@ -38,19 +38,42 @@ var baseMaps = {
     "Night Map": nightmap
 };
 
-var layersControl = new L.Control.Layers(baseMaps, null);
-
-// Can add an overlay map for boundaries...
-
 var map = L.map('map', {
     zoomControl: false,
     attributionControl: false
 });
+
 map.setView([38, -115], 4);
 map.addLayer(osmMapnik, true);
-map.addControl(layersControl)
+
 L.control.attribution({
     prefix: '<a href="mailto:ncxiao@gmail.com?Subject=twitter%20map" target="_top">Ningchuan Xiao</a>'}).addTo(map);
+
+
+// Can add an overlay map for boundaries...
+
+var overlaygrp = new L.LayerGroup();
+var statesmap = null;
+d3.json("./data/us48statesbnd.geojson", function(error, data) {
+    statesmap = L.geoJson(data, {
+        style: function (feature) {
+            edgeColor = "#898989";
+            fillColor = "none";
+            return {color: edgeColor,
+                fillColor: fillColor,
+                opacity: 1,
+                weight: 1
+            };
+        }
+    });
+
+    var overlayMaps = { "States": statesmap };
+    var layersControl = new L.Control.Layers(baseMaps, overlayMaps);
+    map.addControl(layersControl)
+
+});
+
+
 
 //////////////////////////////////////////////
 //
@@ -183,13 +206,13 @@ function make_layer(d) {
             return feature.properties.d3show01;
     	},
     	style: function (feature) {
-    	    edgeColor = "#bdbdbd";
+    	    edgeColor = "#ababab";
     	    fillColor = getColorx(feature.properties[current_mapping_var], grades, colors);
     	    return {color: edgeColor,
     		    fillColor: fillColor,
     		    opacity: 1,
     		    fillOpacity: 0.90,
-    		    weight: 0.5
+    		    weight: 0.3
             };
     	},
     	onEachFeature: onEachAdminFeature
