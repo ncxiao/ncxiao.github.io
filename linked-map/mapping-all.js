@@ -81,36 +81,38 @@ d3.json("./data/us48statesbnd.geojson", function(error, data) {
 //
 /////////////////////////////////////////////
 
-var legend = L.control({ position: 'bottomright' });
-
-legend.onAdd = function (map) {
-    this._div = L.DomUtil.create('div', 'legend');
-    this.update();
-    return this._div;
-};
-
-legend.update = function (props) {
-    if (!props)
-	this._div.innerHTML = '';
-    else
-	this._div.innerHTML = props;
-};
-
-legend.addTo(map);
+// var legend = L.control({ position: 'bottomright' });
+//
+// legend.onAdd = function (map) {
+//     this._div = L.DomUtil.create('div', 'legend');
+//     this.update();
+//     return this._div;
+// };
+//
+// legend.update = function (props) {
+//     if (!props)
+// 	   this._div.innerHTML = '';
+//     else
+// 	   this._div.innerHTML = props;
+// };
+//
+// legend.addTo(map);
 
 // use variable name and grades (intervals) to draw the legend box
 function update_legend_content(varname, gr) {
     var heading = varname;
     if (friendly_names[varname] != null)
 	heading = friendly_names[varname];
-    var adminLegend = "<div class=\"legendbox\" id=\"choroLegend\"><h4>" + heading + "</h4>";
+    var adminLegend = "<div class=\"legendbox\" id=\"choroLegend\" align=\"left\">";
+    // "<div class=\"legendbox\" id=\"choroLegend\"><h4>" + heading + "</h4>";
     for (var i = 0; i<gr.length-1; i++) {
     	adminLegend += '<i style="background:' + colors[i] + '"></i>' +
             formatNumber(Math.round(gr[i+1])) + ' &ndash; ' +
             formatNumber(Math.round(gr[i])) + '<br/>';
     }
     adminLegend += "</div>";
-    legend.update(adminLegend);
+    document.getElementById("legendx").innerHTML = adminLegend;
+    // legend.update(adminLegend);
     // document.getElementById("choroLegend").style.display = "block";
 }
 
@@ -120,20 +122,20 @@ function update_legend_content(varname, gr) {
 //
 /////////////////////////////////////////////
 
-var info = L.control({ position: 'bottomleft' });
+var infoBox = L.control({ position: 'bottomright' });
 
-info.onAdd = function (map) {
+infoBox.onAdd = function (map) {
     this._div = L.DomUtil.create('div', 'info');
     this.update();
     return this._div;
 };
 
-info.update = function (props) {
+infoBox.update = function (props) {
     this._div.innerHTML = (props ? props : 'Mouse on feature to query');
 };
 
-info.addTo(map);
-
+map.addControl(infoBox);
+// map.removeControl(infoBox);
 
 //////////////////////////////////////////////
 //
@@ -405,7 +407,7 @@ function onEachAdminFeature(feature, layer) {
             "</td></tr>" + "<tr><td>Median Household Income</td><td class='num'>" +
             formatNumber(feature.properties.MEDHSINC) + "</td></tr>" +
     		"</table>";
-    	    info.update(popupContent);
+    	    infoBox.update(popupContent);
     	},
         mouseout: function(e) {
     	    uscnty.resetStyle(e.target);
@@ -431,3 +433,11 @@ $(document).ready(function() {
     	$("#form").toggle("fast");
     });
 });
+
+$('#hideinfo').change(function () {
+    var hide_status = $(this). prop("checked");
+    if (hide_status == true)
+        map.removeControl(infoBox);
+    else
+        map.addControl(infoBox);
+ });
