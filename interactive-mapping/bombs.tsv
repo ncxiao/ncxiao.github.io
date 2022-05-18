@@ -1,0 +1,707 @@
+order	time	location	type	details	lng	lat
+1	0:08	43 Southwark Park Road, SE16, London, UK	IB	Grocers: 3x2 roof damaged	-0.068463	51.494531
+2	0:10	49 Southwark Park road, Bermondsey, SE16, London, UK	IB	Bakers: 3x2 roof damaged	-0.058463	51.494532
+3	0:15	84 Southwark Park Road, SE16, London, UK	IB	front room on 1st floor and contents slightly damaged. 3x2 rood damage	-0.070968	51.492602
+4	0:18	141 Braidwood Road, Catford SE6, London, UK	IB	10x6 roof damage	-0.002741	51.440853
+5	0:20	129 Killearn Road, Catford SE6, London, UK	IB	Front room on 1st floor severely damaged	-0.0035	51.441511
+6	0:20	27 Crutchley Road, Downham, London, UK	IB	IB on enclosed ground at rear of premises	0.005194	51.435608
+8	0:20	5 Bacon Grove, Bermondsey, SE1, London, UK	IB	3x2 Wood fencing damage	-0.076848	51.494618
+9	0:21	54 Laleham Road Catford, SE6, London, UK	IB	Middle room damaged	-0.013014	51.446074
+10	0:26	5 Chalsey Road, Brokerley, SE6, London, UK	EB	Private house damaged	-0.031106	51.459858
+11	0:26	84 Tyrwhitt Road, Brockley, SE4, London, UK	IB	2x1 roof damage	-0.024836	51.46385
+12	0:27	20 Jutland Road, Catford SE6, London, UK	EB	Five private houses severely damaged	-0.014813	51.444632
+13	0:27	Jutland Road Catford SE6, London, UK	EB	17 private houses damaged 	-0.014497	51.44549
+14	0:27	86 Torridon Road, Catford SE6, London, UK	IB	2x1 roof damage	-0.001892	51.439758
+15	0:30	91 Ardgowan Road, Catford SE6, London, UK	Shrapnel	2x1 roof damage	-0.000909	51.443076
+16	0:30	96 Tressillain Road, Brockley SE4, London, UK	EB	2 private houses damaged and 14 privates houses damaged	-0.028365	51.462871
+17	0:32	Tustin Street, Camberwell, SE16 , London, UK	IB	2x1 roadway damage	-0.269797	51.505963
+18	0:32	503 Old Kent Road, SE1, London, UK	High Explosive Bomb	back room on 1st floor and contents slightly damaged. 40x20, contents damage	-0.068546	51.484836
+19	0:32	Avondale Square SE1, London, UK	EB	back room on 1st floor and contents slightly damaged. 40x20, contents damage	-0.068679	51.487583
+21	0:34	108 Fordel  Road, Catford, SE6, London, UK	IB	4x3 wodden fence	-0.003765	51.443473
+22	0:34	138 Engleheart Road, Catford,SE6, London, UK	EB	All private houses damaged	-0.011986	51.443434
+23	0:34	Adelaide Avnue, Brockley SE4, London, UK	EB	St. Cyprian's Church, severley damaged by explosive	-0.027546	51.458491
+25	0:34	Ivy Lane, Brockley, SE4, London, UK	EB	Slightly damaged houses.	-0.030228	51.458555
+28	0:40	127 Minard Road, Catford, SE6, London, UK	IB	Front room on 1st floor severely damaged	0.000391	51.44026
+29	0:40	124 Southwark Park Road, SE16, London, UK	IB	back room on 1st floor and contents slightly damaged.	-0.068247	51.492478
+30	0:44	613 Old Kent Road Se15, London, UK	IB	Theatre 4 seats slightly damaged 4x2 roof	-0.064678	51.483254
+31	0:45	709 Old Kent Road SE1, London, UK	IB	30x20 one floor building.	-0.067421	51.484476
+33	0:47	Sportsbank Street, Catford, SE6., London, UK	EB	Three private houses damaged and three severely damaged	-0.010394	51.443845
+34	0:50	101 Storks Road, Bermondsey, SE16, London, UK	EB	4 private houses severely damaged	-0.064278	51.495205
+35	1:10	91 Ardgowan Road, Catford SE6, London, UK	IB	landing on 1st floor damaged	-0.00093	51.443063
+36	1:14	Chadwick road, Peckham, SE15, London, UK	EB & IB	Minor fire damage in all these thoroughfares	-0.073709	51.467969
+37	1:14	9 Love Walk, Camberwell, SE5, London, UK	-	Minor fire damage in all these thoroughfares	-0.088615	51.471405
+38	1:14	27 Claude Road, Peckham SE15, London, UK	-	Minor fire damage in all these thoroughfares	-0.064215	51.46738
+39	1:14	33 Claude Road, Peckham, SE15, London, UK	-	Minor fire damage in all these thoroughfares	-0.064258	51.467407
+40	1:14	190 Rye Lane, Peckham, SE15, London, UK	-	Minor fire damage in all these thoroughfares	-0.066517	51.467215
+41	1:14	290 Southampton Way, Peckham, SE15, London, UK	-	Minor fire damage in all these thoroughfares	-0.078	51.475307
+42	1:14	77 Rye Lane, Peckham, SE15, London, UK	-	Minor fire damage in all these thoroughfares	-0.069591	51.471228
+43	1:14	75 Rye Lane, Peckham, SE15, London, UK	-	Minor fire damage in all these thoroughfares	-0.069505	51.471161
+44	1:14	66 East Surrey Grove, Peckham SE15, London, UK	-	Minor fire damage in all these thoroughfares	-0.075535	51.477071
+45	1:14	91 Coleman Road, Camberwell, SE5, London, UK	-	Minor fire damage in all these thoroughfares	-0.082987	51.478959
+46	1:52	58 Brownhill Road, Catford, London, UK	-	IB (unexploded) on enclosed ground at rear of premises	-0.01498	51.445412
+47	2:00	7 Nunhead Green, Camberwell, SE15, London, UK	EB	house of 5 rooms and content severely damaged	-0.059211	51.464951
+48	2:16	727, Old Kent Road, Camberwell, SE15, London, UK	IB	shop (bakery) and house of 6 rooms back room, ceiling and roof damaged.	-0.062115	51.482064
+49	2:16	52 Brownhill Road , London, UK	-	Falling Shrapnel	-0.016237	51.446594
+50	2:20	84 Tressillain Road, Brockley SE4, London, UK	-	Falling Shrapnel	-0.03015	51.461411
+51	2:23	83 Grange Road, Bermondsey, SE1, London, UK	IB	Grocer: front room 1st floor and contents slightly damaged. 4x2 roof damaged	-0.073971	51.493415
+52	2:25	52 Southwark Park Road, SE16, London, UK	IB	Furniture dealer 30x20 building and contents damaged	-0.071042	51.492603
+53	2:49	Prince Edward Road, E9, London, UK	EB	Roadway and 3 private houses damaged	-0.026022	51.544599
+54	3:15	12, Jewell Street, Mile End. E1, London, UK	IB	6 x 4ft of roof damage.	-0.021121	51.588517
+55	3:45	12 Harford St, Stepney E1, London, UK	IB	a building of 3 floors about 80 x 50ft and contents severely damaged	-0.039128	51.521159
+56	5:15	Hazelbank Road, Catford SE6, London, UK	-	2x2 roadway damage	-0.000542	51.43679
+57	5:15	Plough Way, SE16, London, UK	IB	Timber importers, 200x150 buildings, canteen, workshops etc, dmaged,	-0.040136	51.4929
+58	5:20	Plough Way, SE16, London, UK	EB	Buildings damaged	-0.040135	51.4929
+59	5:57	28 Ringstead Road, Catford, SE6, London, UK	-	2x2 roadway damage	-0.016817	51.446538
+60	7:49	786 Old Kent Road, Camberwell, SE15, London, UK	IB	shop (tobacconist) and house of 6 rooms back room, ceiling and roof damaged.	-0.057958	51.480001
+61	8:00	7, Devonshire Grove, SE15, London, UK	IB	maritime engineers building of two floors 80x60 severely damaged.	-0.059078	51.481309
+62	8:00	Bromley Road, Catford, SE6, London, UK	IB	IB on enclosed ground 	-0.024069	51.4444517
+63	8:02	42 Brown Hill Road, Catford, SE6, London, UK	-	2x2 roadway damage	-0.016369	51.44569
+64	10:04	39 Loampit Vale, Lewisham SE13, London, UK	-	unexploded bomb on enclosed ground at rear of premises	-0.013788	51.464529
+65	10:04	19 Vivian Roan, Bethnal Green E2, London, UK	IB	4x3 ft of wooden fencing damaged in yard	-0.038859	51.531868
+66	10:42	Milton Court Road, New Cross, Se14, London, UK	IB	IB burned out in street	-0.036553	51.480765
+67	12:00	39 Gilmore Road, Lewisham SE13, London, UK	-	unexplodedbomb on enclosed ground at rear of premises	-0.007153	51.460629
+70	14:55	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	(Owned by H.M War Department) E.50 A building of 2 floors about 300x200 used as workrooms,, machine rooms office and store damaged by explosion	0.071383	51.494268
+71	14:55	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	E.51 Two floor building 200x80, where insturments were stored severely damaged	0.072384	51.494268
+72	14:55	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	E.2, 3, 6 and 7, A over a two acre factory space was severely damaged, demolished	0.073385	51.494268
+73	14:55	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	E.40 a two floor storage building 120x80 severely damaged	0.074386	51.4949268
+74	14:55	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	D.94, 95 and 96 A range of buildings of one and two floors used as turney, forges and store, severely damaged.	0.075387	51.494268
+75	14:55	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	E.135 and 136, 400x400 buildings used as laboratories and store severely damaged	0.076388	51.494268
+76	14:55	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	E.151 to 164A, 14 buildings each about 450x60 used as stores, large amount of stock on open ground covering about a quarter square mile, severely damaged	0.077389	51.494268
+77	14:55	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	24 buiidings all slightly damaged	0.07839	51.494268
+78	14:55	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	E.2, a range of buildings damaged covering 250x100. Area used as explosive works and stores, severely damaged.	0.079391	51.494268
+79	14:55	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	A.75 A building of 4 floors and basement 250 x200 used as offices and stores amaged	0.080392	51.494268
+80	14:55	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	E.31a  two floor 150x60 storage building damaged	0.081393	51.494268
+81	14:55	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	Total casualties, 49 males killed, 67 males injured.	0.071394	51.494268
+83	16:20	Chiesmans Depository, Lewisham High Street, SE13, London, UK	IB	universal providers: 100x30 three floor building severely damaged	-0.279528	51.481175
+84	16:40	Newby Place, Poplar E14, London, UK	IB	Poplar Public Hall. Building of 2 floors 80x60 . 5/6 Severely damaged, most of roof off.	-0.012179	51.510176
+85	16:57	Old Tram Yard, Lakedale Road, Plumstead, SE18, London, UK	EB	120x100 of garage, stables, an stores and contents, including two cars damaged. Two horses killed. Range of buildings and one floor 350x70  contents and stored damaged.	0.090685	51.487502
+86	16:57	Old Tram Yard, Lakedale Road, Plumstead, Se18, London, UK	EB	A surface air raid shelter of 40x20 damaged	0.091685	51.487502
+87	16:57	Lakedale Road and plumstead High Street SE18, London, UK	EB	Two people killed, several injured. Buildingd damaged.	0.091042	51.485332
+88	17:03	70 Croft Street Deptford, SE8, London, UK	IB	back rooms 1st floor damaged	-0.042278	51.490326
+90	17:05	61 Basildon Road Abbey Wood, SE2, London, UK	EB	2 private houses damaged	0.107166	51.486391
+91	17:05	35 Basildon Road, Abbey Wood, SE2, London, UK	EB	41 private houses damaged.	0.107098	51.485911
+92	17:05	Basildon Road, Abbey Wood, SE2, London, UK	EB	South Met Gas Company, 18" gas main, 20 ft of electric cables, 30x20 roadway damage.	0.107097	51.485911
+93	17:07	Cordelia Street, Poplar E14, London, UK	IB	Number of IB burned out on road	-0.017591	51.513723
+94	17:07	13 Cordelia Street, Poplar, E14, London, UK	IB	House of 6 rooms and contents severely damaged	-0.019065	51.513685
+95	17:12	Poplar High Street, Poplar, E14, London, UK	EB	St. Mathias Church. 30x20 paveing damaged. 40 feet of brink and some iron railings damaged	-0.014156	51.508879
+97	17:15	Colin Street, Bromley-By-Bow E3, London, UK	IB	12 private houses of about 6 rooms and contents severely damaged	-0.013357	51.527039
+98	17:15	Empson St, Bromley-By-Bow E3, London, UK	IB	Berger Hall Central Church and Medical Mission back building of 1 and 2 floors about 70 x 50ft (used as Mission Hall) and contents severely damaged. Collapsed and fallen down	-0.013147	51.522167
+99	17:15	Marner St School, Marner Street E3, London, UK	IB	A building of 3 floors about 150 x 80 feet about 2/3 of contents severely damaged. Most part of roof off. doors and window glass damaged by breakage	-0.012566	51.522853
+100	17:15	St. Leonards Wharf, Bromley E3, London, UK	IB	 Unoccupied Sun Flour Mills Co. LTD. About 30 x 20 ft of deck planking damaged. Building of 3 floors about 80 x 60 ft( used as grain store) about 3/4 severely damaged. Most part of roof off.	-0.008506	51.517255
+101	17:15	242 Brunswick Rd, Poplar, E14, London, UK	IB	Wine and Spirit Merchants. Building of 3 floors about 80x 40ft used as bottling stores. 4/5 of 3rd floor and contents severely damaged. Most part of roof off.	-0.007467	51.51168
+102	17:15	242, Brunswick Rd, Poplar, E14, London, UK	IB	One half of 2nd floor slightly damaged by water, window glass damaged by breakage.	-0.007567	51.51168
+103	17:15	240 Brunswick Rd, Poplar, E14, London, UK	IB	Wine Growers- Building of 3 floors about 300x 60ft ( used as wine stores) about 2/3 of top floor and contents severely damaged. Most part of roof off. Contents under slightly by water.	-0.007667	51.51168
+104	17:15	240 Brunswick Rd, Poplar, E14, London, UK	IB	A building of 4 floors about 100 x 60 ft, fourth floor severely damaged. Most part of roof off.	-0.007677	51.51168
+105	17:15	Empson St Bromley E3, London, UK	IB	About 200 tons of electric power cable and a quantity of electric apparatus damaged.	-0.013169	51.522187
+106	17:15	Colin Street, Bromley-By-Bow, E3, London, UK	IB	Timber yard of 15 acres with 200 stacks of timber, 2dumb barges, 2 motor lorries, a tractor, 4 cars, and a range of 1-4 floor buildings, (used as workspace, sawmills, offices, canteens, garages and stores). About 5/6 severely damaged and part roof off.	-0.0134	51.527032
+107	17:23	Friendsliy Place, Greenwhich SE10, London, UK	EB	A. Gilbey & Sons, printing and ink manufacturers. Workshopds office and storage damaged	-0.01508	51.472555
+108	17:24	26, Bruce Road, Poplar, Greater London E3 3, London, UK	IB	House of 8 rooms, first floor and contents slightly damaged. Contents under slightly by water, doors and window glass by breakage.	-0.014234	51.527056
+109	17:24	141 Albert Road, North Woolwich E16, London, UK	IB	Coal Dealers. Four shops and houses of 6 rooms each and contents, severely damaged, and roofs off	0.062792	51.500025
+110	17:24	143 Albert Road, North Woolwich E16, London, UK	IB	Coal Dealers. Four shops and houses of 6 rooms each and contents, severely damaged, and roofs off	0.062545	51.500034
+111	17:24	145 Albert Road, North Woolwich E16, London, UK	IB	Coal Dealers. Four shops and houses of 6 rooms each and contents, severely damaged, and roofs off	0.062351	51.500044
+112	17:24	147 Albert Road, North Woolwich E16, London, UK	IB	Coal Dealers. Four shops and houses of 6 rooms each and contents, severely damaged, and roofs off	0.062312	51.499963
+113	17:30	9 Sevenoaks Road Brokerley SE4, London, UK	IB	IB burned out in garden	-0.038056	51.453011
+114	17:30	11 Sevenoaks Road, Brockley, SE4, London, UK	IB	Front room on 1st floor severely damaged	-0.037984	51.452974
+115	17:30	Bruce RD, Bromley E3, London, UK	IB	IB bomb burned out on road	-0.016203	51.526448
+116	17:31	459 Brockley Road, Brocklet SE4, London, UK	IB	Shop and house of 8 rooms  damaged	-0.038917	51.45255
+117	17:31	Bruce RD, Bromley E3, London, UK	IB	IB bomb burned out on road	-0.016213	51.526495
+118	17:31	46 Bruce Rd, Bromley E3, London, UK	IB	House of 8 rooms, 2 back rooms on first floor and contents slightly damaged.	-0.014919	51.526883
+119	17:33	142 Foxberry Road, Brockley, SE4, London, UK	IB	Back room on 1st floor and contents damaged	-0.035556	51.461046
+120	17:34	75 ComerfordRoad Brockley se4, London, UK	IB	IB on enclosed ground at rear of premises	-0.037403	51.45925
+121	17:35	Royal Arsenal, Woolwich, SE18, London, UK	EB & IB	Many buildings in there sections damaged by explosion and fire	0.07133	51.494108
+123	17:35	Three Mill Lane, Greater London E3 3, London, UK	IB	A number of IB bombs burned out on road	-0.007622	51.528187
+124	17:36	Edward Street SE14, London, UK	COB	4x6 roadway and paving damage	-0.035337	51.479026
+126	17:36	Deptford Park, Evelyn Street, Deptford, SE8, London, UK	IB	Many IB burnt out in park	-0.03749	51.487957
+127	17:40	Church hill Woolwich, SE18, London, UK	IB	Minor fire damage in all these thoroughfares	0.058524	51.493267
+128	17:40	Kingsman Street, Woolwich, SE18, London, UK	IB	Minor fire damage in all these thoroughfares	0.059304	51.490968
+129	17:40	Sunsbury Street, Woolwich SE18, London, UK	IB	Minor fire damage in all these thoroughfares	0.05763	51.492119
+130	17:40	Glenalvon Street, Woolwich SE18, London, UK	IB	Minor fire damage in all these thoroughfares	0.047091	51.49096
+131	17:40	Woolwich Church Street, Woolwich SE18, London, UK	IB	Minor fire damage in all these thoroughfares	0.053191	51.49286
+132	17:40	Artillery Place, Wollwich SE18, London, UK	IB	Minor fire damage in all these thoroughfares	0.059403	51.487579
+133	17:40	Powis Street, Woolwich SE18, London, UK	IB	Minor fire damage in all these thoroughfares	0.064191	51.492132
+134	17:40	Chapel Hill, Woolwich SE18, London, UK	IB	Minor fire damage in all these thoroughfares	0.065458	51.468946
+135	17:40	Woolwich high Street, Woolwich SE18, London, UK	IB	Minor fire damage in all these thoroughfares	0.062975	51.493638
+136	17:40	John Wilson Street, Woolwich SE18, London, UK	IB	Minor fire damage in all these thoroughfares	0.062186	51.490249
+137	17:40	Plumstead Road, Woolwich SE18, London, UK	IB	Minor fire damage in all these thoroughfares	0.07813	51.491039
+139	17:41	14, Three Mill Lane, Greater London, E3, London, UK	IB	House of 8 rooms, front and middle room on first floor and contents damaged. 	-0.007611	51.52818
+140	17:42	1 Reeves Road, Bow, E3, London, UK	IB	House of 4 rooms, severely damaged	-0.015352	51.524132
+141	17:43	Ebenezer Place, Chrisp Street, Poplar, E14, London, UK	EB	30x20 roadway and paving damaged. Electric power cables destroyed	-0.014269	51.512429
+142	17:43	120 Chrisp Street, Poplar, E14, London, UK	EB	Shop and house of 7 rooms  and contents severely damaged 	-0.015082	51.515106
+143	17:44	Wotton Way, Deptford, SE8, London, UK	IB	IB burned out in street	-0.030844	51.48063
+146	17:45	112 Foxberry Road, Brockley, London, UK	IB	front room above shop and contents damaged	-0.036366	51.461389
+147	17:45	Reeves Road, Bow, E3, London, UK	IB	Number of IB burned out on road	-0.016014	51.523678
+148	17:45	4 Pier Road, North Woolwich, E16 , London, UK	IB	Front room on 1st floor and contents damaged.	0.063233	51.500942
+149	17:46	Royal Dockyard, Woolwich, London, UK	EB & IB	HM War Dept. Block 47- A building og three floors about 250 x 80 used as store and contents damaged	0.066755	51.488505
+150	17:46	Royal Dockyard, Woolwich, London, UK	EB & IB	Block 49- Abuilding of 2 floors 250x60 storage damaged.	0.06668	51.488458
+151	17:46	Royal Dockyard, Woolwich, London, UK	EB & IB	Block 52- 80x50 two floor building, used as acid store severely damaged	0.066572	51.488391
+152	17:46	Royal Dockyard, Woolwich, London, UK	EB & IB	Block 67 three floor 150x60 roof and contents damaged	0.066325	51.488358
+153	17:46	Royal Dockyard, Woolwich, London, UK	EB & IB	Block 221, 50x40 office and store damaged. Roof off	0.06595	51.488431
+154	17:46	Royal Dockyard, Woolwich, London, UK	EB & IB	Block 149 50x40 used as dwelling and store severely damaged and part of roof off.	0.06624	51.488585
+155	17:46	Royal Dockyard, Woolwich, London, UK	EB & IB	Two timber shed buildings  each 20x10, two railway trucks and contents damaged	0.065939	51.488545
+156	17:46	Royal Dockyard, Woolwich, London, UK	EB & IB	Bloock 225- 80x50 one floor building , used as workrooms and store	0.066025	51.488705
+157	17:46	Royal Dockyard, Woolwich, London, UK	EB & IB	Motor lorry damaged by fire	0.065725	51.488492
+158	17:46	Commonwealth Buildings, Woolwich Curch Street, SE18, London, UK	EB & IB	Two floor building 100x 40, used as work rooms, top floor and contents damaged	0.047607	51.492998
+159	17:46	Commonwealth Buildings, Woolwich Curch Street, SE18, London, UK	EB & IB	One floor building 60x40 ft used as workroom office and store	0.047939	51.493085
+160	17:46	Commonwealth Buildings, Woolwich Curch Street, SE18, London, UK	EB & IB	A house of 7 rooms, top floor and contents severely damaged art of roof off	0.048164	51.493118
+162	17:47	Bowater Road, Woolwich SE18, London, UK	EB & IB	Owned by Siemens Bros. & Co., Ltd. Electrical cable manufacturers"L" block- 6 floors and basement 80x40, workrooms offices and store, 3 upper foors cona contents damaged. Three other buildings damaged.	0.042567	51.494212
+164	17:50	Samuel Street, Woolwich SE18, London, UK	EB	16 private houses damaged	0.051475	51.490654
+166	17:50	13 Walerand Road Lewisham, SE13, London, UK	EB	South Met Gas Company, three houses, gas pipes and gas destroyed	-0.008467	51.465913
+167	17:50	Honor Oak Road, Forest Hill SE23, London, UK	EB	Owned by Lewisham BC 6x3 Roadway damage	-0.055316	51.44389
+168	17:51	Devons Road, Bromley, E3, London, UK	IB	St. Andew's Hospital. 100x50 three floor building, roofing and joisting damaged by fire. 100x22 three floor building roofing and joisting damaged. 50x20 one floor building damaged. 40x20 plumbers workshop . 1/6 contents damaged. A number of IB burned out in hospital grounds.	-0.873261	52.238359
+169	17:51	Empson Street, Bromley, E3, London, UK	IB	Berger Hall Central Church and Medical Mission 120x80 lecture hall and club rooms, contents severely damaged.	-0.013179	51.522173
+170	17:51	Albert Road, North Wollwich, E16, London, UK	IB	12x6 wooden fencing and railway cutting away damaged	0.058093	51.500489
+172	17:52	Hyde Vale Greenwich S10, London, UK	COB	HM War Dept. Royal Air Force. An aeroplane damaged by fire by explosion and breakage	-0.00769	51.475251
+173	17:52	Catherine Grove, Greenwich SE10, London, UK	IB	London Auxiliary Fire Service: Medium trailer pump of content damaged. Tar and brickwork damaged in yard	-0.018811	51.474417
+174	17:52	70 Crooms Hill, Greenwich SE10, London, UK	IB	Ladies School. Ursuline Convent 10x4 roof damage	-0.005286	51.476091
+175	17:52	 West Ferry Road, Millwall, E14, London, UK	EB & IB	Thames Oil Wharft, Ltd. 1000, 45 gallonmineral oil drums and three oil tanks (40 tons each) and two, 2 foor buildings, contents and machinery all damaged.	-0.02596	51.498828
+176	17:52	 West Ferry Road, Millwall, E14, London, UK	EB & IB	Timber storage. 2 Tarpaulins burned and a 20x 10 stack or timberand an iron shed all damaged	-0.025928	51.498387
+177	17:53	457 Brockley Road, Brockley SE4, London, UK	IB	Back room on ground floor and contents damaged	-0.038577	51.453005
+179	17:54	Conduit House, Hyde Vale, Greenwich SE10, London, UK	IB	15x5 roof damage to house that had been let out as flats	-0.005422	51.473338
+180	17:54	Bexley Road Eltham, SE9, London, UK	IB	10x6 GRASS burned	0.074938	51.451803
+181	17:54	599 Manchester Road, Cubitt Town, E14, London, UK	IB	Private house of 9 room s damaged by fire	-0.009233	51.500361
+182	17:55	47 Lewisham Road SE10, London, UK	EB	Hairdressers, Severley damaged	-0.01545	51.472613
+183	17:55	Hollyhedge House, Blackheath, SE3, London, UK	IB	HM War Dept 2x1 damage	-0.007803	51.469608
+184	17:55	117 Sedgeway, Catford, SE6, London, UK	EB 	Private house of 6 rooms damaged	0.008015	51.440451
+185	17:55	201 Boundfield Road, Downham, London, UK	EB	Private house of 6 rooms damaged	0.007027	51.435491
+186	17:55	30 Brandham Road, Lee Se12, London, UK	IB	roof damaged by fire	0.001348	51.460013
+187	17:55	Uplands Brandram, Road, Lee SE12, London, UK	IB	roof damaged by fire	-0.06905	51.457233
+189	17:55	Brandham Road, Lee, SE12, London, UK	-	top floor contents damaged	0.01834	51.454921
+190	17:55	25 Dowanhill Road, Catford, Se6, London, UK	-	Unexploded bomb at rear of premises, not yet detonated	-0.0003354	51.440016
+192	17:55	Tunnel Avenue, Greenwich, SE10, London, UK	EB	building of one room and tro floors severley damaged	0.006263	51.493654
+193	17:55	34 Grantley Street, Mile End E1, London, UK	IB	House of 6 rooms, first floor and contents severely damaged. Part of roof off.	-0.044105	51.524039
+194	17:57	St. Catherine's Vicarage, Pepys's Road, New Cross, SE14, London, UK	IB	house of 20 rooms, most of roof off, contents slightly damaged.	-0.043418	51.466596
+195	17:57	27, Elsdale Street, Hackney, E9, London, UK	IB	Back room on second floor and contents damaged. Roof damaged by breakage	-0.049057	51.543173
+196	17:57	40 Harford Street, Stepney, E1, London, UK	IB	House of 5 rooms and contents severely damaged	-0.039128	51.521159
+197	17:57	 Garnett Street Stepney E1, London, UK	EB & IB	Minor fire and explosion damage	-0.054984	51.507799
+198	17:57	North Woolwich Road E16, London, UK	IB	Victualler Barge House60x40 two floor building, used as victuallers and contents damaged. 	0.030367	0.030367
+199	17:58	Gervase Street, Camberwell, SE16, London, UK	IB	2x1 roadway damage	-0.069877	51.492673
+200	17:58	Crofton Park Railway Station, Brockley, SE4, London, UK	IB	(Southern Railway) IB on Track	-0.036523	51.455163
+202	17:59	25 Goodwood Road, Newcross, SE14, London, UK	IB	Aspinalls. Paint Manufacturers. 20x10 roofing and joisting damaged	-0.039842	51.476685
+203	17:59	Surrey Commercial Docks, SE16, London, UK	IB	Port of London, timber yards, warehouses, offices and stores, covering 120 acres, including 10 shops and small craft of about 30 000 tons gross. 4/5 of content damaged.  Roofs off. Two firemen killed and four injured	-0.03348	51.494009
+205	17:59	660 Rotherhithe Street, Se16, London, UK	IB	4 floor buildings, covering 1/2 mile, severely damaged	-0.034728	51.499984
+206	17:59	Milbourne St, Hackney E9, London, UK	IB	Slipper manufacturer- building of 1 and 2 floors about 80 x 60 feet, used as workrooms, offices and stores severely damaged. Most part of roof off and door and window glass broken	-0.048063	51.543479
+207	17:59	Arnold Road, Bow E3, London, UK	IB	Back room on first floor and contents slightly damaged. Roof by breakage	-0.022732	51.526615
+208	17:59	West Ferry Road, Millwall, E14, London, UK	EB	20 ft of railway track and a building of one floor80x40 damaged	-0.025969	51.498707
+209	18:00	8 Lanbury Road, Camberwell SE15, London, UK	IB	front room of 1st floor damaged	-0.046841	51.459717
+210	18:00	Thornham Street Greenwich SE10, London, UK	EB	20 private houses damaged	-0.014856	51.480664
+212	18:00	12 Buckthorne Road, Corfton Park SE4, London, UK	IB	First floor damaged	-0.039449	51.455519
+213	18:00	Morden Wharf Road, Greenwich SE10, London, UK	EB & IB	Firmin & Co. Sack and bag manufactures. Range of buildings  200x180 used as workshops severely damaged	0.004296	51.493805
+214	18:00	Tunnel Avenue, Greenwich, SE10, London, UK	EB & IB	Henry Froud, Haulage contractors, 120x40 severely damged	0.006263	51.493641
+215	18:00	Tunnel Avenue, Greenwich, SE10, London, UK	IB	Greenwich borough council, 4x3 asphalt paving damage	0.00637	51.493574
+216	18:00	58 Sydenham Road, Sydenham, SE26, London, UK	EB	Shop and house of 5 rooms damaged. 6 shops opposite and adjoining damaged by explosion. One Section officer AFS injured	-0.050319	51.425764
+217	18:00	40 Batavia Road, New Cross SE14, London, UK	IB	back rooms 1st floor damaged and 4x3 roof damage	-0.037423	51.476162
+218	18:00	Swedish yard, Surrey, Commercial Docks, SE16, London, UK	COB	stack of timber and 30x20 damaged	-0.040116	51.494741
+220	18:00	Rotherhithe Street, SE16, London, UK	IB	Wharfingers. 300x100 1-3 floor buildings, contents severely damaged	-0.04581	51.504372
+221	18:00	299 Rotherhithe Street, SE16, London, UK	IB	Timber Merchants, 500x400  and 4/5 of contents severely damaged	-0.033405	51.502685
+222	18:00	Redriff School, Rotherhithe Street, SE16, London, UK	IB	range of buildings between 1-4 floors, covering 200x200 severely damaged	-0.036497	51.501974
+223	18:00	1 Redriff Road, Rotherhithe, SE16, London, UK	EB	Many buildings in this thorough fare are severely damaged	-0.043789	51.495229
+225	18:00	128 Aylward Street, Stepney E1, London, UK	IB	Timber yard and offices of two floors and contents severely damaged	-0.046206	51.515971
+226	18:00	Wapping Wall E1, London, UK	IB	Metropolitan Wharf-A building of 2 floors about 100 x 60 feet ( used as warehouse office and store) severely damaged	-0.052508	51.506721
+227	18:00	 Sidney Street Stepney E1, London, UK	EB & IB	Minor fire and explosion damage	-0.05516	51.517262
+229	18:00	39 Saundersness Road, Cubitt Town, E14., London, UK	EB	20 houses damaged	-0.0066651	51.487814
+230	18:00	Nos. 81-8 Yarrow House, Glengall Grove, Millwall, E14, London, UK	Eb	Three 4-floor buildings, and contents damaged	-0.049957	51.51666
+231	18:00	8 Maudesley House, Glengall Grove, Millwall, E14, London, UK	EB	Rest of street of 48 houses damaged by breakage	-0.049903	51.516373
+232	18:00	8 Hibbert House, Glengall Grove, Millwall, E1, London, UK	EB	Rest of street of 48 houses damaged by breakage	-0.04985	51.516814
+233	18:00	332 Hibbert House, Glengall Grove, Millwall, E1, London, UK	EB	Rest of street of 48 houses damaged by breakage	-0.050054	51.516547
+235	18:01	2a Kneller Road, Brockley, SE4, London, UK	IB	Middle room damaged	-0.038256	51.460979
+236	18:01	3 Kneller Road, Brockley, SE4, London, UK	IB	Front room on 1st floor severely damaged	-0.037509	51.461424
+237	18:01	Sutton Dweillings, Chilton Grove, Deptford, SE8, London, UK	IB	front room on 1st floor damaged. 	-0.281149	51.480467
+239	18:01	Well St, Hackney, E9, London, UK	IB	London Passenger Transport Board- An Omnibus Reg. No. EXV 246. Top deck severely damaged. Lower deck slightly damaged	-0.048896	51.542325
+240	18:01	360 Stepney Way, E1, London, UK	IB	2x2 Roof damage	-0.045985	51.516758
+241	18:01	10 Stepney High Street, E1, London, UK	IB	4x2 roof damage	-0.042679	51.51731
+242	18:01	42 Stephney High Street E1, London, UK	IB	Timber shed, 30x10 (used as store) damaged	-0.042829	51.516763
+243	18:01	Aylward Street London E1 OQW, London, UK	EB & IB	Minor fire damage in this area	-0.046833	51.515904
+244	18:01	Westferry Road, Millwall, E14, London, UK	EB	Lead and Zinc Manufacturers. 40 x20 of wharfside and a 60x40 building, office and machine room, damaged	-0.025969	51.498714
+245	18:02	Old Kent Road, SE1, London, UK	EB	Belonging to South Metropolitan Gas Works: 3, 000, 000 cubic feet of gas destroyed and a gas holder severely damaged. A range of buildings including work rooms, showrooms and offices damaged by fire.	-0.076713	51.488306
+248	18:02	3 Blackheath Vale, Blackheath SE3, London, UK	IB	Back room on 1st floor and contents damaged	0.00414	51.469317
+249	18:02	22 Blackheath Vale, Blackheath SE3, London, UK	IB	Groundfloor passage damaged. 	0.004203	51.469081
+250	18:02	48 Eglinton Hill, Plumstead, SE18, London, UK	EB	All private houses damaged	0.068613	51.476487
+251	18:02	Brent Road, Plumstead, SE18, London, UK	EB	All private houses damaged	0.068463	51.475468
+253	18:02	Milborne St, Hackney E9, London, UK	IB	Milbourne Piano Works, building of 3 floors, 30 x 20ft used as workrooms, offices and stores, about 14 x 1oft or roof damaged. Doors broken open. Ceiling and contents under by water	-0.048192	51.543425
+254	18:02	East India Dock Rd, London, UK	IB	2x1 paving damage	-0.027361	51.512141
+255	18:02	Thomas Road E14, London, UK	IB	1x1 paving damage	-0.025106	51.516003
+256	18:02	Manchester Road, Cubitt Town, E14, London, UK	EB	40x 30 roadway damage. And Three houses each of 8 rooms and contents damaged	-0.0042424	51.494306
+257	18:02	Manchester Road, Cubitt Town, E14, London, UK	EB	40x 30 roadway damage. And Three houses each of 8 rooms and contents damaged	-0.00806	51.494025
+259	18:03	Avonley Road, Newcross, SE14, London, UK	EB	Owned by South Met Gas and Met Water and Deptford Borough Council, gas and water mains fractured and 40x16 of roadway damage	-0.050314	51.479276
+261	18:03	25, Upcott Street, SE15, London, UK	IB	Two private houses damaged by explosion	0.848879	52.830169
+262	18:03	Jeringham Road, Newcross, SE14, London, UK	IB	Building of two floors 100x 50, back room aand contents slightly damaged. 	-0.040651	51.471147
+263	18:03	26 Bushmoor Crescent, Plumstead, SE18, London, UK	EB	All private houses damaged	0.071236	51.47396
+264	18:03	22 Matlock Street, Poplar, Greater London E14 7, London, UK	IB	front room on 1st floor and contents damaged	-0.039633	51.5154
+265	18:03	Burdett Road, E3, London, UK	IB	2x1 paving damage	-0.032333	51.520593
+266	18:03	Dudgeons Wharf, Manchester Road, Cubitt town, E14, London, UK	EB	40x10 brickworkand damaged	-0.164704	51.498656
+268	18:04	207 Waller Road, Newcross, SE14, London, UK	IB	6x4 of GRASS burned in garden	-0.047626	51.469002
+269	18:04	Riverway, Blackwall Lane, East Greenwich, SE10, London, UK	EB	40x30 roadway severely damged, gas main fractured, 20 private houses danaged	0.010458	51.496216
+270	18:04	Riverway, Blackwall Lane, East Greenwich, SE10, London, UK	EB	40x30 roadway severely damged, gas main fractured, 20 private houses danaged	0.009825	51.496129
+271	18:04	94-120, Riverway, Blackwall Lane, East Greenwich, SE10, London, UK	EB	40x30 roadway severely damged, gas main fractured, 20 private houses danaged	0.009374	51.496223
+272	18:04	100-108 Riverway, Blackwall Lane, East Greenwich, SE10, London, UK	EB	40x30 roadway severely damged, gas main fractured, 20 private houses danaged	0.008913	51.49631
+274	18:04	2 Hick Street, Rotherhithe, SE16, London, UK	IB	front room on ground floor damaged. 	-0.045262	51.492116
+276	18:04	275 Bancroft Road, Tower Hamlets London E1, London, UK	IB	A3 block, about 6 x 4 ft of roof damaged. Ceiling and contents under slightly by water	-0.042648	51.5245
+277	18:04	4 Ainsworth Road, Hackney, E2, London, UK	IB	House of 10 rooms, front room on top floor and contents severely damaged. Part of roof off. Rest of house and contents slightly damaged.	-0.050762	51.540283
+278	18:04	North Woolwich Roads E, London, UK	IB	Dumb barge damaged	0.030356	51.50227
+279	18:04	307 Stepney Way E1, London, UK	IB	Private house of 6 rooms, back rooms, 2nd 3rd floors damaged	-0.045985	51.516758
+280	18:04	Glengall Grove, Millwall, E14, London, UK	IB & EB	Lancashire Freight Services Ltd. 1,2 and 3 floor buildings  covering 500x500 used as warehouses. Severely damaged	-0.012437	51.495628
+281	18:05	112 Waller Road, Newcross, SE14, London, UK	IB	Front room damaged by fire	-0.048019	51.469708
+282	18:05	Lewisham High Street, Se13, London, UK	EB	Southern Met. Electric, light and Power) 100x40 four floor building. Space used as showroom	-0.010815	51.464341
+283	18:05	97 Ainsworth Road, Hackney E9, London, UK	IB	House of 12 rooms, front room on top floor and contents severely damaged. Part of roof off. Rest of building and contents slightly damaged.	-0.049951	51.538701
+284	18:05	Wellington Way Buildings, Wellington Way, Bow E3, London, UK	IB	Building of 3 floors about 60x 30 feet, (used as dwellings) about 1/2 of top floor and contents damaged. Roof damaged by breakage	-0.02507	51.526319
+285	18:05	Stebondale St, London, UK	IB	A house and a Grocery shop of 6 rooms and contents severly damges	-0.008824	51.489697
+288	18:06	Axminster Road, Holloway, N7, London, UK	EB	9x6 pavement damaged, fractures gas main in street	-0.118386	51.560913
+289	18:06	Axminster Road, Holloway, N7, London, UK	EB	32 private houses thoroughfare damaged by explosion. 	-0.118569	51.561106
+290	18:06	Waller Road, Newcross, SE14, London, UK	IB	IB burned out in garden	-0.04831	51.470802
+291	18:06	 Loampit Vale Lewisham, SE13, London, UK	EB	All builidings damaged	-0.018183	51.465338
+292	18:06	Canon Wharf, Evelyn Street, Deptford,SE8, London, UK	IB	stack of timber and 100x100x30 damaged	-0.040116	51.489994
+293	18:06	97 Stebondal Street Cubitt Town E14, London, UK	IB	Shop on ground floor and contents severely damaged	-0.008145	51.491051
+294	18:06	48 Stebondale Street, Cubitt Town E14, London, UK	IB	Front room on first floor and contents severely damaged	-0.008596	51.490115
+295	18:06	75, Stebondale Street Cubitt Town E14, London, UK	IB	Front room on first floor and contents damaged	-0.008299	51.490747
+296	18:06	White Horse Rd, Tower Hamlets, London E1, UK, London, UK	EB & IB	Minor fire damage in this area	-0.040254	51.517125
+297	18:07	Childeric Road, Newcross, SE14, No's 21-61 and 10 40, London, UK	EB	37 Private houses damaged by explosion	-0.038554	51.478007
+300	18:07	12 St Austell Rd, Lewisham, Greater London SE13 7, London, UK	IB	Garage 20x15 Damaged with fencing	-0.006956	51.467387
+301	18:07	Morden Wharf Road, Greenwich SE10, London, UK	EB	Cement Marketing, range of buildings lost, 300x100 ft damaged. P.678 heavy unit damaged by shrapnel	0.004189	51.493755
+302	18:07	Tunnel Avenue, Greenwich, SE10, London, UK	EB & IB	Delta Metal Co. Ltd. 80x40 size offices and stores and contents. Roof off. 3 auxiliary firemen injured.	0.006349	51.493618
+303	18:07	215 Brockley Road, Forest Hill, SE23, London, UK	IB	2x1 roof damage	-0.03544	51.461941
+304	18:07	110 Gosterwood Street, Deptford, SE8, London, UK	IB	9x6 roof damaged	-0.038049	51.483909
+305	18:07	81 Plough Way, Rotherhithe SE16, London, UK	High Explosive Bomb	St. Barnabas National School & Minetts Saw Mills Ltd. Dining Room, Grocers and 17 private houses all damaged, 	-0.041195	51.492615
+306	18:07	4 Ainsworth RD, Hackney, E9, London, UK	IB	Front rooms on 3rd floor and contents severely damaged. part of roof off, ceilings and contents under by water.	-0.050741	51.540313
+307	18:07	Addington Road, Bow E3, London, UK	IB	About 6 x 4ft of roofing slightly damaged.	-0.023421	51.527978
+308	18:07	86, Manchester Road, Cubitt Town E14, London, UK	EB	Caterer-A building of 3 floors about 40x 20 ft used as refreshment bar, swelling and store, upper part and contents damaged.	-0.007849	51.488447
+309	18:07	9 Merchant Street Bow, E3, London, UK	IB	2x1 roof damage	-0.027661	51.526066
+310	18:07	33 Merchant Street, Bow, E3, London, UK	IB	front room on 1st floor and contents damaged	-0.027661	51.526059
+311	18:07	78 Merchant Street, Bow, E3, London, UK	IB	Back room on 1st floor damaged. 2x1 roof damage	-0.02765	51.526019
+312	18:08	13 Bartram Road, Brockley, SE4, London, UK	IB	Back room on 1st floor and contents damaged	-0.039424	51.452937
+313	18:08	11 Bartram Road, Brockley, SE4, London, UK	IB	Back room on 1st floor and contents damaged	-0.039318	51.453011
+314	18:08	75 Chilton Grove,Deptford SE8, London, UK	IB	house of 8 rooms damaged	-0.041261	51.49173
+315	18:08	Stepney Green, E1, London, UK	IB	1x1 tarmac damaged	-0.046549	51.521843
+316	18:08	Stepney Causeway, Stepney, E1, London, UK	IB	Training Hostel. 4 floor building, top floors and basement severely damaged.	-0.045112	51.512272
+318	18:09	293, Tunnel Avenue, Greenwich SE10, London, UK	IB	Eastwood Wharfage Ltd. 300x100, warehouse and stores damged, most of roof off	0.015169	51.487287
+319	18:09	Clemence St, London, UK	EB	Buidings at these addresses all damaged	-0.031676	51.51604
+320	18:09	Locksley St, Tower Hamlets, London E14 7EJ, London, UK	EB	Buidings at these addresses all damaged	-0.031201	51.517051
+322	18:10	38a Stondon Park, Forest Hill, SE23, London, UK	IB	Front room on 1st floor severely damaged. One female burned on left arm	-0.040577	51.450556
+323	18:10	Blackhorse Road, Deptford SE8, London, UK	IB	Weyland Tar Co. Quantity of Stock damaged	-0.037815	51.484
+324	18:10	209a, Mile End Road E1, London, UK	IB	Mantle and Costume Manufacturers-A building of 2 floors about 80x 30 ft used as workrooms, garage, office ad store. 1/2 of contents severely damaged. Part of roof off. rest of building and contents slightly damaged.	-0.045292	51.521968
+325	18:10	15, Harford Street, Stepney E2, London, UK	IB	Boot and shoe Manufacturer- Shop and house of 8 rooms and contents severely damaged.	-0.039128	51.521175
+326	18:10	35 Grantely Street, Mile End E1, London, UK	IB	A house of 8 rooms and contents severely damaged. Roof off	-0.044084	51.524049
+327	18:10	Drawn Buildings, Adelina Grove, Stepney E1, London, UK	EB	A building of 5 floors about 100 x 80ft (used as model dwellings) about 1/4 and contents damaged. Rest of building and content slightly damaged.	0.059374	51.651405
+328	18:10	St Clement's Hostel, Bow Road E3, London, UK	IB	Building of 3 floors about 80x 60ft severely damaged. Roof by breakage	0.072185	51.564182
+329	18:10	28, Bow Road, Bow E3, London, UK	IB	Back room on 3rd floor and contents slightly damaged. Roof by breakage	-0.026055	51.526652
+330	18:10	113-149 Stebondale Street. Cubitt Town E14, London, UK	EB	39 houses each of 6 rooms including 4 shops and contents severely damaged	-0.008173	51.491031
+331	18:10	156-194 Stebondale Street Cubitt Town E14, London, UK	EB	39 houses each of 6 rooms including 4 shops and contents severely damaged	-0.007937	51.491385
+332	18:10	101-111 Stebondale Street, Cubitt Town E14, London, UK	EB	6 houses each of 6 rooms and contents damaged	-0.008431	51.490476
+333	18:10	38 Cayley Street, E14, London, UK	IB	Back room on ground floor damaged. 	-0.364355	51.502417
+334	18:10	Harford Street E1, London, UK	IB	1x1 tarmac damaged	-0.039032	51.520577
+335	18:11	Gibbon Road, Camberwell, SE15, London, UK	EB	20x30 roadway damage	-0.051459	51.466898
+336	18:11	733b, Old Kent Road, SE15, London, UK	EB	Submarine engineer shop, workshops, office and store all damaged. 	-0.060448	51.480952
+337	18:11	735-737 Old Kent Road SE15, London, UK	EB	Two shops and two flats	-0.06033	51.480912
+338	18:11	Buchan Road, Camberwell, SE15, London, UK	EB	Gas main fractured and about 30x20 of roadway damaged by explosion and fire	-0.053248	51.465625
+339	18:11	Lewisham high Street SE13, London, UK	EB	Southern Rail. 40x20 brickwork on railway bridge damaged	-0.010783	51.464338
+340	18:11	Lower Road, Rotherhithe, SE16, London, UK	IB	IB burned out in street. 	-0.05422	51.498493
+341	18:11	A Yard, Millwall Dock E14, London, UK	IB	A warehouse of 1 floor about 150x 150 feet and contents severely damaged. Basement used as messrooms, dormitories, offices and store, and contents damaged	-0.024327	51.496333
+342	18:11	84a, West Ferry Road, Millwall E14, London, UK	EB & IB	Timber Importers-A range of brick and corrugated iron shed buildings of one floor covering an area of 400x 200ft. About 1/2 of contents severely damaged	-0.011499	51.498037
+343	18:12	Dunoon Road, Forest Hill, SE23, London, UK	EB	Owned by LewishamBC 12x8 Roadway damage	-0.052325	51.447654
+344	18:12	Knoyle Street, New Cross, SE14, London, UK	EB	South Met. Gas. Mains Fractured	-0.041057	51.48209
+345	18:12	Mornington Road, Bow E3, London, UK	IB	Incendiary bomb on road	-0.023724	51.52638
+346	18:12	32, Devas Street, Poplar E14, London, UK	IB	House of 4 rooms, severely damaged	-0.013044	51.523246
+347	18:12	45-47 Mile End Road, Stepney, E1, London, UK	EB	Garage. Two floor building severely damaged, roof off.	-0.052803	51.52089
+348	18:12	Spert St, London, UK	EB	Paper Mills. 100x80 two floor building, severely damaged	-0.040607	51.510384
+349	18:13	13 Bartham Road, Brockley, SE4, London, UK	IB	Back room on 1st floor and contents damaged	-0.039477	51.452933
+350	18:13	Bow Road, Bow E3, London, UK	IB	St. Clement's. Old Nurses's Home, 80x20 two floor building, 3/4 damaged and roof off	-0.024682	51.526867
+351	18:13	62 Ashton Street E14, London, UK	IB	House of 4 rooms, top floor and contents damaged	-0.007956	51.510924
+352	18:13	Cottage Street, Poplar, E14, London, UK	IB	Number of IB burned out on road	-0.014777	51.50981
+353	18:13	Commercial Rd, Poplar, Greater London E1, London, UK	EB	East End Mission Society. Building of one floor and and contents damaged	-0.055253	51.514317
+354	18:14	51 Lewisham Hill, SE13, London, UK	EB	4 private houses of 20 rooms each and contents damaged.	-0.008897	51.468189
+355	18:14	53 Lewisham Hill, SE13, London, UK	EB	4 private houses of 20 rooms each and contents damaged.	-0.008994	51.468069
+356	18:14	55 Lewisham Hill, SE13, London, UK	EB	4 private houses of 20 rooms each and contents damaged.	-0.008865	51.468202
+357	18:14	57 Lewisham Hill, SE13, London, UK	EB	4 private houses of 20 rooms each and contents damaged.	-0.008833	51.468215
+358	18:14	Carlton Works, Glengall Grove, Millwall, E14, London, UK	IB & EB	Walter Voss and Co Manufacturing Chemists. 200x200 used as laboratories, store and contents severely damaged	-0.049582	51.517161
+359	18:14	Carlton Works, Glengall Grove, Millwall, E14, London, UK	IB & EB	Speedy Metal Castings Ltd. 200x60  Machine Room, workshop and contents damaged	-0.049743	51.517201
+360	18:15	309, New Cross Road, New Cross SE14, London, UK	IB	2x1 roof damage	-0.03773	51.475694
+361	18:15	Woolwich Road, Charlton, SE10, London, UK	IB	G & H Harveys, Engineers, 3x2 roof damage in spinning room	0.026949	51.487358
+362	18:15	72, Codrington Hill, Forest Hill, SE23, London, UK	IB	house of 5 rooms damaged. Roof blown off	-0.035749	51.448599
+363	18:15	5 Stondon Park, Forest Hill, SE23, London, UK	IB	3x1 wooden fencing damaged,	-0.039698	51.450819
+364	18:15	24 Codrington Hill, Forest Hill, SE23, London, UK	IB	Front room on 1st floor severely damaged	-0.039188	51.447981
+367	18:15	North Side, Import Dock, West India Docks E14, London, UK	IB	C shed- about 60x60 ft or roof damaged	0.008229	51.5076
+369	18:15	Masters Street E1, London, UK	IB	1x1 tarmac damaged	-0.041543	51.519256
+370	18:15	Tidey Street E14, London, UK	IB	1x1 tarmac damaged	-0.021803	51.519737
+371	18:15	St Paul's Way, E3, London, UK	IB	1x1 tarmac damaged	-0.030085	51.517274
+372	18:15	Raine Street, Tower Hamlets, London E1W, London, UK	EB	Minor fire damage in this area	-0.057806	51.506411
+373	18:16	272 New Cross Road, SE15, London, UK	IB	2x2 roof damage	-0.053175	51.478187
+374	18:16	Aston Street E14, London, UK	IB	1x1 feet of tarmac damaged	-0.038691	51.516068
+376	18:17	Stockholme Street, Rotherhithe, SE16, London, UK	COB	COB burnt out in enlosed ground	-0.051546	51.485025
+377	18:17	Samudas Wharf, Manchester Road, Cubitt Town, E14, London, UK	EB & IB	Transport Contractors -A range of buildings of 2 floors covering an area about 800x300f (used as machine rooms, workshops, offices and store) and contents and some stock in yard including a number of motor lorries severely damaged.	-0.006476	51.496802
+378	18:17	Samudas Wharf, Manchester Road, Cubitt Town, E14, London, UK	EB & IB	Engineers-A range of buildings of 2 floors covering an area about 800x300f (used as machine rooms, workshops, offices and store) and contents and some stock in yard including a number of motor lorries severely damaged.	-0.006637	51.496942
+379	18:17	Samudas Wharf, Manchester Road, Cubitt Town, E14, London, UK	EB & IB	Stone Merchants-A range of buildings of 2 floors covering an area about 800x300f (used as machine rooms, workshops, offices and store) and contents and some stock in yard including a number of motor lorries severely damaged.	-0.006326	51.496922
+380	18:17	Leven Street, Poplar, E14, London, UK	IB	Mills Cartwright and Reynolds. One floor back building 80x60 used a stockroom damaged	-0.005715	51.515563
+382	18:17	Narrow Street, Limehouse, E14, London, UK	IB	New Sun Wharf. Three floor building, 80x60 used as store. Severely damaged.	-0.036171	51.509506
+384	18:18	Commercial Rd, Poplar, Greater London E1, London, UK	EB	Minor fire damage in this area	-0.054427	51.514243
+385	18:19	583, Commercial Road, Stepney E1, London, UK	IB	Methodist East End Mission. Building of 1 floor, balcony and basement about 100x 60ft, used as club rooms, billiard rooms, storeroom and lecture room. About 2/3 of content damaged.	-0.075423	51.521199
+387	18:19	Selsey Street E14, London, UK	IB	1x1 feet of paving damaged	-0.024712	51.517751
+388	18:19	333/339, Mile End Road E1, London, UK	COB	C.W.S tailoring department-2 upper floors and contents damaged. 2x2 ft of roof breakage	-0.038929	51.523293
+389	18:19	Mile End Road, E, London, UK	IB	Portuguese Jewish Cemetry 40 x 20 ft of grass burned	-0.041858	51.522447
+391	18:19	94 St.Leonard's Road, Poplar, E14, London, UK	IB	Front room on 1st floor and contents damaged, roof part off	-0.00966	51.513261
+392	18:19	Tooke Street, Millwall E14, London, UK	EB	30x 30 roadway damaged. 11 Private houses  and one shop damaged	-0.025879	51.498065
+394	18:20	St Leonards Road, Poplar, E14, London, UK	IB	A number of IB bombs burned out on road	-0.008805	51.511612
+395	18:20	Import Dock, East India Docks, Poplar E14, London, UK	IB	Part of London Authority- A builing of 2 floors about 100 x 50 ft and contents including hydraulic crane and electric meter cupboard severely damaged. Building used as a hydraulic pressure house slightly damaged. Doors and window glass by breakage. Building of one floor 40 x 30ft about 4/5 severely damaged. Most part of roof damaged.	0.008562	51.508034
+396	18:21	St Leonard's Road, Poplar E14, London, UK	IB	Joinery and moulding manufacturer- A building of one floor about 80 x 40ft used as moulding manufacturers and contents slightly damaged. Window glass by breakage, part of roof off. A building of 2 floors about 30 x 20 ft and contents severely damaged.	-0.00858	51.511352
+398	18:22	St. James' Church, St. James'  Road, Newcross, SE14, London, UK	IB	3x2 rood damage	-0.038798	51.473996
+399	18:23	Commercial Road, Stepney  E1, London, UK	EB	Minor fire damage in this area	-0.074281	51.518164
+400	18:24	122 Lewisham High Street, Lewisham SE13, London, UK	-	4x2 roof damage and 2x2 flooring damage	-0.016839	51.451644
+401	18:24	Dundee Wharf, Limehouse, E14, London, UK	EB	Company name:Wharfage- A building of two floors about 200 x 100ft severely damaged. 9 motor vehicles damaged	-0.030288	51.507939
+402	18:24	566, Cable Street , Stepney E1, London, UK	EB	Confectionery and Fancy goods- Range of buildings of one, two and three floors. ( nused as workrooms, showrooms, offices and stores) about 2?3 severely damaged.	-0.042723	51.511243
+403	18:24	24, Maria Street, Millwall E14, London, UK	EB	8 Houses, 6 rooms each, severely damaged	-0.046928	51.520633
+404	18:24	52 Malabar Street, Millwall, E14, London, UK	EB	Remaining houses are also damaged	-0.023635	51.498506
+405	18:25	733, Old Kent Road, SE15, London, UK	EB	Shop and house of 6 rooms  damaged	-0.060437	51.480962
+406	18:25	Morant St, London, UK	EB	Poplar Borough Council- 20 x 10ft of roadway and paving damaged. Many houses in this thoroughfare damaged	-0.022177	51.510171
+407	18:25	Harford Street, Stepney, E1, London, UK	IB	A building of 2 floors about 60 x 40 feet( used as licensed premises, dwelling and store). Top floor and contents severely damaged by fire and part of roof off.	-0.039	51.520267
+408	18:26	13 Laurie Grove, Deptford, SE14, London, UK	IB	3x2 roof damage	-0.036964	51.474753
+410	18:27	Vesta Road, Newcross, SE14, London, UK	IB	40x20 on one floor as building used as library damaged	-0.040763	51.468538
+411	18:27	131 Pepy's Road, Newcross, SE14, London, UK	IB	3x2 roof damage	-0.043625	51.468863
+412	18:27	129 Pepy's Road, Newcross, SE14, London, UK	IB	3x2 roof damage	-0.043719	51.466827
+413	18:27	123 Pepy's Road, Newcross, SE14, London, UK	IB	2x1 roof damage	-0.043673	51.466703
+414	18:27	97 Pepy's Road, Newcross, SE14, London, UK	IB	1x1 roof damage	-0.044538	51.469868
+415	18:27	23 Pepy's Road, Newcross, SE14, London, UK	IB	3x2 roof damage	-0.045194	51.472934
+416	18:27	91 Pepy's Road, Newcross, SE14, London, UK	IB	3x2 roof damage	-0.044495	51.469895
+417	18:27	53 Stewart Road, Nunhead, SE15, London, UK	-	IB unginited	-0.052102	51.458489
+419	18:28	21 Pepy's Road, Newcross, SE14, London, UK	IB	2x1 roof damage	-0.045204	51.472459
+420	18:28	29 Pepy's Road, Newcross, SE14, London, UK	IB	House of eight rooms, back room on groung floor and contents damaged by fire	-0.045085	51.472693
+421	18:28	Newcross Gate, Newcross, SE14, London, UK	IB	London Passenger Transport board, building of on e floor about 300 x100 used as tramcar shed and 6x4 of roof and two tramcars slightly damaged by fire. 	-0.04037	51.475117
+423	18:29	Deptford Church Street, SE8, London, UK	IB	IB burned out in street. 	-0.022686	51.477243
+424	18:29	Coutts Rd E.3, London, UK	IB	1 x 1ft of tarmac damaged in street	-0.299903	51.366806
+425	18:29	North Quay, West, India Docks, E14, London, UK	EB & IB	Range of warehouses covering 2000x120 severely damaged	-0.024926	51.509288
+426	18:30	141 Jeringham Road, Newcross SE14, London, UK	IB	2x2 roof damage	-0.042193	51.46973
+427	18:30	150 Jeringham Road, Newcross SE14, London, UK	IB	3x2 roof damage	-0.042011	51.469904
+428	18:30	165 Jeringham Road, Newcross SE14, London, UK	IB	3x2 roof damage	-0.041871	51.469984
+430	18:30	146 Jeringham Road Newcross, SE14, London, UK	IB	3x2 roof damage	-0.043661	51.468392
+431	18:30	24 Lewisham Way, Lewisham SE, London, UK	IB	house of 14 rooms, most of roof and top floor damaged	-0.027778	51.468747
+432	18:30	123 St. Asaph's Rpad, Brokeley, SE4, London, UK	IB	IB unginited, 2x2 roof damage	-0.042856	51.464504
+433	18:30	87 Foxberry Road, Brockley, SE4, London, UK	IB	Middle room damaged	-0.036187	51.461555
+434	18:30	8 Sevenoaks Road Crofton Park, SE4, London, UK	IB	Front room on 1st floor severely damaged	-0.03824	51.453096
+435	18:30	2-8 Odessa Street, Rotherhithe Street Se16, London, UK	IB	   Timber Yard, Granary, Offices and Lighterman all slightly damaged	-0.033833	51.497642
+436	18:30	South Wharf River, Ambulance Service, Rotherhithe Street, SE16, London, UK	IB	Range of buildings between 1-3 floors, 400x400, contents and roof severely damaged	-0.033002	51.499666
+437	18:30	2-119 Elgar Street, Rotherhithe, SE16, London, UK	EB	Many buildings in this thoroughfare damage	-0.035206	51.497032
+438	18:30	591, Commercial Road, Stepney E1, London, UK	EB	Zenith Motor Works-A building of 2 floors and contents severely damaged.	-0.04224	51.513016
+439	18:30	91 Shandy Street, Stepney, E1, London, UK	IB	House of 6 rooms and contents severely damaged	-0.042015	51.520636
+440	18:30	83 Ernest Street, Stepney, E1, London, UK	IB	House of 8 rooms and contents severely damaged	-0.040549	51.52187
+441	18:30	61 Ernest Street, Stepney E1, London, UK	IB	House of 8 rooms and contents severely damaged. Roof off, front toom on 1st floor damaged	-0.040752	51.52181
+442	18:30	15 Shandy Street, E1, London, UK	IB	House of 6 rooms and contents severely damaged. Front room on 1st floor severely damaged	-0.043216	51.520781
+443	18:30	112 Harford Street, Stepney E1, London, UK	IB	House of 6 rooms and contents severely damaged	-0.038635	51.518267
+444	18:30	66 Shandy Street, Stepney E1, London, UK	IB	House of 6 rooms and contents severely damaged. Top floor and contents damaged	-0.042055	51.52069
+445	18:30	91 Stebondale Street, Cubbitt Town, E14, London, UK	IB	house and shop and contents	-0.008255	51.490892
+447	18:31	116 Erlanger Road, Newcross, SE14, London, UK	IB	2x1 roof damage	-0.04646	51.470004
+448	18:31	102 Erlanger Road, Newcross, SE14, London, UK	IB	House of 6 rooms, front rooms and contents severely damaged	-0.045604	51.470467
+449	18:31	4 Brandham Road, Lee SE12, London, UK	EB 	Private house damaged 12 rooms	0.00012	51.462616
+450	18:31	2 Brandham Road Lee SE12, London, UK	EB	Building and contents 80x40 used a garage severely damaged	6.60E-05	51.462743
+451	18:31	1 Brandham Road Lee SE12, London, UK	EB	house of 13 rooms damaged	-0.000234	51.462977
+452	18:32	Dowanhill Road, Catford, SE6, London, UK	-	2x2 roadway damage	-0.001547	51.439923
+454	18:32	31, 33, and 35, Venue St, Poplar E14 , London, UK	EB	Three private houses of 6 rooms each and contents severely damaged	-0.012173	51.519011
+455	18:32	Venue Street, Tower Hamlets, London E14 6QA, London, UK	EB	23 buildings damaged. 6 persons severely injured	-0.011552	51.518741
+456	18:33	7 Birkhall Road, Catford SE6, London, UK	-	unexploded bomb on enclosed ground at rear of premises	-0.0054	51.4376
+457	18:33	403-405 East India Dock Road, Poplar E14, London, UK	EB & IB	2 private houses of 8 rooms and contents severely damaged. Collapsed and fallen down.	-0.000493	51.51281
+458	18:34	Shandy Street, E.1, London, UK	IB	1 x1 ft of tarmac destroyed	-0.042282	51.520502
+459	18:35	Blackheath SE10, London, UK	IB	20x10 feet of GRASS burned on heath	-0.011314	51.472336
+460	18:35	Blackheath Hill, Blackheath Se10, London, UK	EB	South Met Gas Company: Gas destroyed and carriage way	-0.011239	51.472095
+461	18:36	7 Braywood Road, Eltham SE9, London, UK	-	explosive bomb (unexploded) Yard damged.	0.082156	51.458141
+462	18:36	Mile End RD E, London, UK	IB	2x2 ft of roof dmamged	-0.036544	51.524354
+463	18:36	Narrow Street, Stepney E1, London, UK	IB	A building of 4 floors about 80x 60 ft of which 1/2 of and contents severely damaged	-0.037845	51.509793
+464	18:37	Ormside Street, Camberwell, SE15, London, UK	IB	Building of 3 floors 60x60, owned by Durling, West and Durling Ltd. Severley damaged. 	-0.055138	51.481776
+465	18:37	65 Drakefell Road, Brokeley, SE4, London, UK	IB	Front room on 1st floor severely damaged	-0.042909	51.465996
+467	18:39	150 Erlanger Road, Newcross, SE14, London, UK	IB	2x2 roof damage	-0.046114	51.469219
+468	18:39	Shadwell Lane, Stepney E1, London, UK	IB	Part of top floor of flats Nos. 51-75 and 70-75, severely damaged	-0.055357	51.511372
+469	18:40	63 Cressingham Road, Lewisham, SE13, London, UK	IB	Private house damaged	-0.007686	51.464695
+470	18:40	64 Wickham Road, Brockley, SE4, London, UK	IB	Back room on 1st floor and contents damaged	-0.032467	51.463453
+471	18:40	24 Oldfield Road, Rotherhithe, SE16, London, UK	Eb	6 houses damaged and fallen down	-0.046599	51.490342
+472	18:40	13 Pedro St, Clapton E5, London, UK	IB	6 x 4ft of roof and joisting damaged in scullery on ground floor	-0.040596	51.556126
+473	18:40	St Leonard's Avenue, Poplar E14, London, UK	IB	A number of IB bombs burned out on road	-0.008895	51.511665
+476	18:40	A Yard Millwall Docks, E14, London, UK	EB & IB	Port of London Authority. No, 4, 4a and 5 warehouses, each of two floors and 400x60 damaged with contents.	-0.024252	51.496126
+477	18:41	Cantrell Road, E3, London, UK	IB	1 x 1 ft of tarmac slightly damaged	-0.026801	51.521754
+478	18:42	Yeoman Street, Deptford SE8, London, UK	COB	20x10 roadways damage	-0.039551	51.491579
+480	18:44	Vesey Street, Poplar E14, London, UK	IB	A number of IB bombs burned out on road	-0.014691	51.511531
+481	18:45	Brunswick Square, WC1, London, UK	EB	back room of 5th floor and contents slihghtly damaged 2x1 roof damage	-0.123731	51.524341
+482	18:45	Brunswick Square, WC1, London, UK	EB	2x2 roadway damage and some buildings lightly damaged	-0.124118	51.524494
+483	18:45	Tamar Street, Charlton, SE7, London, UK	EB 	30x20 of roadway and paving severely damaged	0.045054	51.492064
+484	18:45	Holbeach Road Catford, SE6, London, UK	-	2x2 pavement damage	-0.021639	51.447232
+485	18:45	Catford Greyhound Staium, Catford SE6, London, UK	-	Falling Shrapnel	-0.176414	50.842189
+486	18:45	Mountsfeild park, Catford SE6, London, UK	-	unexplodedbomb on enclosed ground at rear of premises	-0.009476	51.447352
+487	18:45	7, King John Street, Poplar, Greater London, E1 3, London, UK	IB	Water Closet and contents slightly damaged. 2 x 1 ft of roof by breakage in yard	-0.043904	51.517564
+488	18:46	276 Newcros Road, Newcross SE14, London, UK	IB	2x2 damage	-0.038175	51.475422
+490	18:47	Deptford Church Street, SE8, London, UK	IB	Southern Rail. Railway arch damaged	-0.022729	51.477597
+491	18:47	Emmott Street E1, London, UK	IB	1 x 1 ft of tarmac damaged	-0.037172	51.522394
+494	18:47	A Yard Millwall Docks, E14, London, UK	EB	Port of London Authority. "A" Shed, awarehouse of two floors 400x60 damaged	-0.024982	51.495999
+498	18:50	30 East Ferry Road, Cubitt Town, E14, London, UK	IB	Shop and house of 6 rooms, and contents damaged	-0.010609	51.498709
+499	18:51	Grace Street, Bromley, E3, London, UK	IB	Starch Manufacturers. Range of buildings of 1-2 floors, covering 2 acres. 2/3 severely damaged	-0.014072	51.526331
+500	18:51	14 Talwin Street, Bromley E3, London, UK	IB	Private house of 8 rooms severely damaged, part of roof off	-0.01252	51.525593
+501	18:51	16 Talwin Street, Bromley, E3, London, UK	IB	Private house of 8 rooms severely damaged, part of roof off	-0.012455	51.525626
+502	18:52	63 Stebondale Street, Cubitt Town, E14, London, UK	IB	Front room on 1st floor and contents damaged. 	-0.008298	51.490722
+503	18:52	Glengall Grove, E14, London, UK	EB	60x60 of roadway damaged	-0.012205	51.495614
+504	18:52	174 Glengall grove, Cubitt Town, E14, London, UK	EB	Off licence. Building of 3 floord 60x20 , used as dwelling and store, contents severly damaged.	-0.01376	51.496295
+505	18:52	172 Glengall Grove Cubitt Town, E14, London, UK	EB	Tobacconist, Shop and house of 6 rooms, damaged.	-0.013642	51.496375
+506	18:55	Alfred Street, Bow, E3, London, UK	IB	Back room on 2nd floor and contents slightly damaged. Roof by breakage	-0.026129	51.528014
+508	18:56	Heybridge Avenue, SW16, London, UK	IB	10x10 grass damage	-0.121971	51.419221
+509	18:57	176, Glengall Grove, Cubitt Town, E14, London, UK	EB	6 houses, 6 rooms each damaged.	-0.01377	51.496275
+510	18:57	171 Stebondale Street, Cubitt Town, E14, London, UK	EB	8 houses 6 rooms each and contents damaged	-0.008152	51.491061
+511	18:57	124 Stebondale Street, Cubitt Town, E14, London, UK	EB	11 houses of 6 rooms ad contents damaged	-0.008195	51.490847
+512	18:58	Purcell Place, Hackney, E9, London, UK	IB	Front room on first floor and contents slightly damaged. 4x 2ft of roof by breakage	-0.081563	51.532642
+513	18:59	Commercial RD, E, London, UK	IB	2x 1 ft of paving damaged 	-0.050018	51.513537
+514	19:00	171, St. Asaph's Road, Brokerly SE4, London, UK	IB	6x4 roof damage	-0.040785	51.464092
+515	19:00	28 Harcourt Road, Brockley, SE4, London, UK	IB	Back room on 1st floor and contents damaged	-0.036688	51.461697
+516	19:00	Amesbury Avenue, Streatham, SW16, London, UK	IB	Anti- aircraft shell unexploded. And 2x2 roadway damaged	-0.124744	51.414194
+517	19:00	Bancroft Rd, Tower Hamlets, London E1, London, UK	IB	2 x 1ft of tarmac damaged	-0.048831	51.524854
+518	19:00	86 Ernest Street, Stepney E1, London, UK	IB	Back room on 2nd floor and contents damaged. 3x4 room damaged.	-0.040538	51.52189
+519	19:00	Pier Road, North Woolwich, E16, London, UK	EB & IB	London and North Eastern railway. 60x20x10 stack of coal 6 railway trucks and content severely damaged	0.060745	51.498921
+520	19:01	Wearside Road, Lewisam, SE13, London, UK	IB	IB on enclosed ground 	-0.016151	51.45709
+521	19:01	Furze Street E3, London, UK	IB	2x1 ft of tarmac damaged	-0.022036	51.518507
+523	19:05	Silk Mills Path, Lewisham SE13, London, UK	EB	Broadway Press, Ltd. Printers. Machine room, storage, roof damaged 200x150	-0.011836	51.465519
+524	19:05	86 Ernest Street, Stepney E1, London, UK	IB	Front room on 1st floor and contents damaged, roof part off (4x3)	-0.040538	51.521863
+527	19:07	55, Glengarnock Avenue, Cubitt town E14, London, UK	IB	A house of 6 rooms, upper part and contents severely damaged	-0.007677	51.489126
+528	19:07	45, Glengarnock Avenue, Cubitt town E14, London, UK	IB	A house of 6 rooms, upper part and contents severely damaged	-0.007874	51.489163
+529	19:07	34, Glengarnock Avenue, Cubbit town E14, London, UK	IB	A timber shed building about 12x 10 feet  used as store and contents severely damaged	-0.007948	51.489147
+530	19:07	1 Pennyfields, London, UK	EB	Port of London Authority-About 60x40 ft of paving and some railway track damaged by explosion on dockside	-0.025243	51.5095
+531	19:08	Manchester Road, Cubitt Town E14, London, UK	IB	Builders and Contractors- Some stock in yard and motor lorry damaged	-0.007486	51.493334
+532	19:10	Hornlane East, Greenwich SE10, London, UK	EB	Southern rail. 30 ft roadway damaged	0.017449	51.487032
+534	19:10	Glenarm Road, Clapton, E5, London, UK	EB	Roadway and 4 private houses damaged	-0.047434	51.552795
+535	19:11	Butcher Row. Cable Street- Stepney E1, London, UK	EB	Cider factory-A building of one floor used as workshops, offices and stores severely damaged.	-0.041885	51.511881
+536	19:13	Belford Grove, Woolwich, SE18, London, UK	-	Suspected unexploded bomb	0.060603	51.488097
+537	19:13	Parry Place Woolwich Se18, London, UK	-	Suspected unexploded bomb	0.071983	51.491033
+538	19:13	Burrage Road SE18, London, UK	-	Suspected unexploded bomb	0.072958	51.486159
+539	19:13	Corborn Street, London, E3 2AB, London, UK	IB	2x1 paving damage	-0.029826	51.527907
+540	19:14	50 Ordnance Crescent, Greenwich SE10, London, UK	IB	Back room on 1st floor and contents damaged	0.001351	51.500067
+542	19:16	40 and 42 Blackthorn Street Bow, E3, London, UK	EB	2 private houses damaged	-0.020589	51.520615
+545	19:20	Princes Rise, Lewisham, SE13, London, UK	IB	3x2 carriage way damaged	-0.01026	51.468147
+546	19:20	Lewisham Hill, Lewisham SE13, London, UK	EB	South Met Gas Company: Gas destroyed and carriage way (20x20)	-0.009426	51.467265
+547	19:20	Durham Row, Tower Hamlets London E1 ONP, London, UK	IB	4x3 roof damage	-0.040528	51.51741
+548	19:25	19 Boyne Road, Lewisham, SE13, London, UK	-	2x2 roadway damage	-0.007916	51.46405
+550	19:25	102 West Ferry Road, Millwall E14, London, UK	IB & EB	Wharfingers-A range of buildings of 1, 2 and 3 floors covering an area of about 650x 450 feet used as machine rooms, workshops, sorting rooms, offices dwelling and store. About 2/3 and contents, some stock in yard, including 3 motor lorries severely damaged.	-0.012426	51.497627
+551	19:25	102 West Ferry Road, Millwall E14, London, UK	IB & EB	General Merchants-A range of buildings of 1, 2 and 3 floors covering an area of about 650x 450 feet used as machine rooms, workshops, sorting rooms, offices dwelling and store. About 2/3 and contents, some stock in yard, including 3 motor lorries severely damaged.	-0.012426	51.497627
+552	19:25	104 West Ferry Road, Millwall E14, London, UK	IB & EB	Millwall Ingot Metals Ltd-A range of buildings of 1, 2 and 3 floors covering an area of about 650x 450 feet used as machine rooms, workshops, sorting rooms, offices dwelling and store. About 2/3 and contents, some stock in yard, including 3 motor lorries severely damaged.	-0.011933	51.497921
+557	19:30	Pelican Passage, Cambridge Heath Road, E1, London, UK	EB	Cambridge Warehouse Co. (General Merchants)150x100 four floor building used as stores. Ground and 1st severely damaged.	-0.054783	51.523722
+557	19:30	Pelican Passage, Cambridge Heath Road, E1, London, UK	EB	Cambridge Warehouse Co. (General Merchants)150x100 four floor building used as stores. Ground and 1st severely damaged.	-0.037282	51.524739
+560	19:43	3 Orchard Place, Blackheath, SE3, London, UK	IB	2x1 roof damage	-0.000312	51.468396
+561	19:45	 Walter Terrace, Poplar, Greater London, E1 , London, UK	IB	Back room on 1st floor damaged. 	-0.043819	51.515765
+562	19:46	198 Lewisham High Street, Lewisham, SE13, London, UK	-	Electric cables burned in debris	-0.01685	51.45163
+564	19:51	Otis Street, Bromley, E3, London, UK	IB	Gas and water leakage in street	-0.010013	51.527093
+565	19:53	Trinity Wharf, Rotherhithe Street S.E.16, London, UK	IB	5 dumb barges unladen damaged	-0.034761	51.500501
+566	19:53	Trinity Wharf, Rotherhithe Street S.E.16, London, UK	IB	2 dumb barges and contents damaged by fire and sunk	-0.034772	51.500261
+567	19:53	Trinity Wharf, Rotherhithe Street S.E.16, London, UK	IB	dumb barge and contents damaged by fire and sunk	-0.034407	51.500581
+568	20:00	38 Collent Street, E9, London, UK	IB	Back room on ground floor damaged. 	-0.048086	51.543932
+569	20:01	Aberdeen Wharf 94 \Wapping High Street, Tower Hamlets, London E1W 2ND, London, UK	EB	dumb barge damaged by explosion and sunk	-0.058794	51.503218
+570	20:01	St. Leonard's Street, Bromley E3, London, UK	IB	Gas leakage in street	-0.01189	51.526078
+571	20:03	St. Paul's Way, E3, London, UK	IB	2x1 paving damage	-0.030063	51.517261
+572	20:05	Rhodeswell Road, E, London, UK	IB	2x1 paving damage	-0.035133	51.518483
+574	20:15	Cavell Street- Stepney E1, London, UK	EB & IB	Minor fire and explosion damage	-0.057187	51.516636
+575	20:26	307 Stepney Way E1, London, UK	IB	Back room on 2nd floor and contents damaged	-0.045985	51.516778
+576	20:35	391 Mile End Road, E, London, UK	EB	Buildings and contents severely damaged	-0.036236	51.524746
+579	20:39	Girdlers Road West Kensington w14, London, UK	EB	Roadway, Pavement, 4 inch gas main, a house and it's contents damaged	-0.215993	51.49639
+580	20:40	121 Vauxhall Bridge Road, Pimlico SW1, London, UK	IB	3x2 of flooring damage front room and 3rd floor also damaged	-0.137332	51.492453
+581	20:40	65 Effra Road, Brixton SW2, London, UK	IB	London County Council Architects Department. IB burned out in garden	-0.114181	51.456718
+582	20:41	Summerley Street, Wandworth, SW18, London, UK	IB	Southern trains 1x1 of deck planking damaged on bridge	-0.188962	51.440246
+583	20:42	61 Cleaver Street, SE11, London, UK	IB	IB in yard	-0.110415	51.488317
+584	20:42	5 Ethelred Strret SE11, London, UK	IB	Minor fire and explosion damage	-0.11273	51.491753
+585	20:43	Caldecot Road, Camberwell, SE5, London, UK	IB	London County Council. 85 "U" sub-station 2x1 tar damaged	-0.09434	51.469737
+586	20:43	31a Morecambe Street , SE17, London, UK	Eb	Shop and house of 8 rooms damaged	-0.092889	51.489653
+589	20:43	43 Browing Street, SE17, London, UK	IB	Back rooms 1st floor damaged	-0.094133	51.49035
+590	20:43	15 Manor Place, SE17, London, UK	IB	Southwark Borough Council Public Baths. 80x50 swimming pool and slipper baths damaged	-0.097463	51.489149
+592	20:44	Oldfield Grove, Rotherithe SE16, London, UK	IB	Rope and Twine makers: 600x40 building, store and workhouse severely damaged and fallen down. 	-0.046605	51.490472
+593	20:45	99 Larkhall lane, Clapham SW4, London, UK	IB	Undertakers: 2x1 roof damage	-0.129633	51.471887
+594	20:45	99 Larkhall lane, Clapham SW4, London, UK	IB	2x1 roof damage	-0.129633	51.471887
+595	20:45	51 Paradise Road, Clapham, SW4, London, UK	IB	IB burned out in garden	-0.126595	51.472485
+597	20:46	7 Pembroke Gardens, Kensington w8, London, UK	IB	IB unignited	-0.200233	51.495339
+598	20:46	Jeffreys Road, Clapham SW4, London, UK	IB	Suspected presence of IB	-0.127445	51.470868
+600	20:48	Vauxhall Walk, Lambeth, Se11, London, UK	IB	Minor fire and explosion damage	-0.120237	51.489694
+601	20:50	Stillington Street, Westminster, SW1, London, UK	IB	2x1 roadway damage	-0.137298	51.494285
+602	20:50	Lillington Street, Pimlico, SW1, London, UK	IB	2x2 roadway damage	-0.138247	51.491934
+603	20:50	108, Earls Court Road, w8, London, UK	EB	14 rooms severely damaged, 1 male 1 femailekilled	-0.190415	51.48975
+604	20:50	79-83c Lexham Gardens, w8, London, UK	EB	three private houses and contents severely damaged	-0.191256	51.496184
+605	20:50	36 Willow Way, Sydenahm, SE26, London, UK	IB	IB burned out in garden	-0.059046	51.431836
+606	20:50	Lydhurst Avenue, Streatham Hill, SW2, London, UK	EB	All owned by Wandsworth Borough council or South Met Gas: Roadway and paving all damaged. Gas mains fractured, several private houses damaged	-0.119589	51.437083
+607	20:50	Lydhurst Avenue, Streatham Hill, SW2, London, UK	EB	All owned by Wandsworth Borough council or South Met Gas: Roadway and paving all damaged. Gas mains fractured, several private houses damaged	-0.119021	51.437023
+608	20:50	Keymer Road, SW2, London, UK	EB	All owned by Wandsworth Borough council or South Met Gas: Roadway and paving all damaged. Gas mains fractured, several private houses damaged	-0.119444	51.436872
+609	20:50	Faygate Road, SW2, London, UK	EB	All owned by Wandsworth Borough council or South Met Gas: Roadway and paving all damaged. Gas mains fractured, several private houses damaged	-0.12027	51.438244
+610	20:51	20 Albert Embankment, Se11, London, UK	IB	Minor fire and explosion damage	-0.12285	51.489639
+611	20:51	Albert Embankment, SE11, London, UK	IB	IB in yard	-0.123	51.489285
+612	20:52	Vauxhall Bridge Road, Pimlico, SW1, London, UK	IB	unexploded canon shell 2x1 roadway damage	-0.137353	51.492293
+613	20:52	York Hill, West Norwood, SE27, London, UK	IB	IB on road	-0.106803	51.435569
+615	20:52	Copenhagen Place, London, UK	IB	2x1 paving damage	-0.030612	51.513612
+616	20:52	Bow Road E3, London, UK	IB	2x1 paving damage	-0.025626	51.526897
+617	20:52	Salmon Lane, London, UK	IB	2x1 paving damage	-0.033541	51.513767
+618	20:53	38 Collingtree Road, SE26, London, UK	IB	Back room on ground floor and contents damaged	-0.056374	51.42907
+620	20:54	5 Hermitage Lane, Streatham, SW16, London, UK	IB	Boot Repairer, IB burned out on roof.	-0.123337	51.41479
+621	20:55	Stonhouse Street, Clapham, SW4, London, UK	EB	Roadway damaged, gas main fractured	-0.136999	51.463587
+622	20:55	Alexandra Mansions, 140, Stonhouse Street, Clapham SW4, London, UK	EB	A building of three floors 40x30 damaged by explosion.	-0.136851	51.463366
+623	20:55	Bellenden Road, Peckham, SE15, London, UK	EB	All damaged by explosion	-0.072641	51.468628
+624	20:55	18-34 and 13-39 (inclusive) (23 buildings), London, UK	EB	All damaged by explosion	-0.07262	51.468634
+626	20:55	Bellenden Road, Peckham, SE15, London, UK	EB	All damaged by explosion	-0.072641	51.468735
+627	20:55	Putney Heath, Putney SW15, London, UK	IB	10x10 grass damaged	-0.229879	51.452422
+628	20:56	52 and 54 Danby Street, Peckham SE15, London, UK	-	Minor fire and explosion damage	-0.074589	51.466281
+630	20:56	160 Rye Lane Peckham, SE15, London, UK	-	Minor fire and explosion damage	-0.067493	51.468531
+631	20:56	Southamton Way, Peckham SE15, London, UK	-	Minor fire and explosion damage	-0.077924	51.475143
+632	20:56	19 St. George's Way, Peckham SE15, London, UK	-	Minor fire and explosion damage	-0.084689	51.48153
+633	20:56	Choumert Road, peckham SE15, London, UK	-	Minor fire and explosion damage	-0.072104	51.467515
+634	20:56	Harris Street, Camberwell SE5, London, UK	-	Minor fire and explosion damage	-0.086276	51.477791
+635	20:56	Wells Way, Southwark, London SE5, United Kingdom, London, UK	-	Minor fire and explosion damage	-0.085441	51.481153
+636	20:56	Bessemer Road, Camberwell, SE5, London, UK	EB	Kings College Hospital, main entrance and casualty ward damaged. 	-0.093786	51.468678
+637	20:56	88 Kennington Park Road, Se11, London, UK	IB	Minor fire and explosion damage	-0.107169	51.487144
+638	20:57	Westwood Park, Forest Hill, SE23, London, UK	IB	IB on enclosed ground 	-0.061403	51.445406
+640	20:57	9 Colworth Grove, Browing Street, SE17, London, UK	IB	storeroom on ground floor damaged	-0.092867	51.488948
+643	20:57	Browning Street, SE17, London, UK	IB	2x1 paving damage	-0.094724	51.490058
+644	20:57	42 Braganza Street SE17, London, UK	IB	IB in yard	-0.10373	51.48732
+645	20:57	77 Brook Drive, SE11, London, UK	EB	Buildings damaged	-0.108787	51.494711
+647	20:58	22 Horniman Drive, Forest hill, SE23, London, UK	IB	Back room on 1st floor and contents damaged	-0.058257	51.444435
+648	20:58	71 Casewick Road, West Norwood, Se27, London, UK	IB	2x1 grass burned in garden	-0.107712	51.428143
+649	20:58	96 Longley Road Tooting, SW17, London, UK	IB	15x4 timer and iron store damaged	-0.1668	51.421101
+650	20:58	125 Wavertree Road, Streatham hill, SW2, London, UK	IB	6x4 fence damaged	-0.117033	51.439748
+651	20:59	Morval Road, Brixton, SW2, London, UK	IB	Lambeth Borough Council, Ib burned out in street	-0.111697	51.456229
+652	20:59	Barrow Road, Streamtham, SW16, London, UK	EB	South Met Gas, Wandsworth Borough Counciland Met Water Bourd Buildings. Roadway damaged, gas and water mains fractured. 30x5 brick wall damaged	-0.13279	51.42152
+653	20:59	Barrow Road, Streamtham, SW16, London, UK	EB	South Met Gas, Wandsworth Borough Counciland Met Water Bourd Buildings. Roadway damaged, gas and water mains fractured. 30x5 brick wall damaged	-0.133305	51.421219
+654	20:59	Barrow Road, Streamtham, SW16, London, UK	EB	South Met Gas, Wandsworth Borough Counciland Met Water Bourd Buildings. Roadway damaged, gas and water mains fractured. 30x5 brick wall damaged	-0.133595	51.421085
+655	20:59	Bladen Court, Barrow Road, SW16, London, UK	Eb	South Met Gas, Wandsworth Borough Counciland Met Water Bourd Buildings. Roadway damaged, gas and water mains fractured. 30x5 brick wall damaged	-0.130303	51.422505
+656	21:00	Crescent Grove, Clapham, SW4, London, UK	-	Suspected presence of IB	-0.138051	51.459785
+659	21:00	71 Graveney Road, tooting SW17, London, UK	IB	back rooms 1st floor damaged	-0.170079	51.429712
+660	21:00	Brook Drive, Se11, London, UK	IB	2x1 paving damage	-0.106445	51.493924
+661	21:00	Brook Drive, Se11, London, UK	IB	3x2 paving damaged	-0.106037	51.49811
+662	21:00	6 Boulcott Street, E1, London, UK	IB	Timber shed, 8x7 used as store damaged with contents	-0.042152	51.512524
+663	21:00	Burdett Road, E3, London, UK	IB	10x8 wooden hoarding damaged	-0.032269	51.520543
+664	21:01	12 Kingsmead Road, Streatham, SW16, London, UK	IB	4x2 roof damage	-0.139795	51.426537
+665	21:01	Turguand Street, Walworth, SE17, London, UK	IB	2x1 roof damage	-0.094683	51.490875
+666	21:02	Georgette Place Greenwich SE10, London, UK	EB	South Met Gas Company: Gas destroyed and carriage way (15x10)	-0.00837	51.476412
+667	21:02	47 Orient Street, Kennington SE11, London, UK	IB	Motor garage, 80x60 one floor building, 2/3 content damaged	-0.10543	51.49436
+668	21:03	41 Church Road, Brixton, SW2, London, UK	IB	IB in yard	-0.113281	51.441232
+669	21:03	Turner's Rd, London, UK	IB	1x1 paving damage	-0.032409	51.516686
+670	21:03	Acland Street and Acland Street Streatfild Street, London, UK	EB	20x15 roadway and paving damage	-0.107106	51.525323
+671	21:04	St. Paul's Road, Islington, n1, London, UK	IB	front room on third floor damaged, including roof and ceiling	-0.087727	51.546085
+672	21:05	Harrow Road, w2, London, UK	EB	gas mains and 20x 20 of paving destroyed	-0.181019	51.520721
+673	21:05	42 Norman Road, Greenwich, SE10, London, UK	EB	Wharfingers, 30x20 quayside damage	-0.017599	51.478663
+674	21:05	293 Leighham Court Road, Streatham, SW16, London, UK	IB	4x3 grass burned	-0.114541	51.428265
+675	21:05	218 Leigham Court Road, Streatham, Sw16, London, UK	IB	5x3 of lath and plaster, ceiling damaged by fire and . First floor and rest of ditto anf contents damaged	-0.114576	51.429012
+676	21:06	190 Underhill Road, East Dulwich, SE22, London, UK	IB	Back room on 2nd floor and contents damaged	-0.064098	51.45086
+677	21:06	 Garratt Lane, Tooting SW17, London, UK	IB	R.E Gordon Printing shop. Office damaged	-0.177784	51.432134
+678	21:07	Crownstone Road, Brixton, SW2, London, UK	IB	IB on road	-0.115252	51.455914
+679	21:09	Longfellow Road e3, London, UK	IB	2x1 paving damage	-0.025726	51.575632
+680	21:10	110 Kimberlet Avenue, Camberwell SE15, London, UK	IB	Back room on 1st floor and contents damaged	-0.052126	51.466123
+681	21:10	Riverside Greenwich SE10, London, UK	IB	Dumb barge Cabden, Elizabeth, Hallett. D. H. Hallett & Co. Pipers Wharf, Riverside Greenwich SE10. Three vessels each 60 tons gross (unladen) slightly damaged by fire.	-0.00284	51.484945
+684	21:10	1 Uffington Road, West Noorwood, SE27, London, UK	IB	2x1 roof damage	-0.112173	51.429683
+685	21:10	900 Garratt Lane, Tooting, SW17, London, UK	IB	Scullery on 1st floor damaged	-0.172106	51.42936
+686	21:10	112 Downton Avenue, Streatham Hill, SW2, London, UK	EB	2 houses damaged	-0.119374	51.4393
+687	21:10	Hillside Road, Tulse Hill, SW2, London, UK	IB	Artisians and General Dwelling Ltd. Tennis net damaged	-0.115163	51.439168
+688	21:12	52 Palace Road, Tulse Hill, SW2, London, UK	IB	IB burned out in garden	-0.115056	51.439998
+689	21:12	Leigham Courrt Road, Streatham SW16, London, UK	IB	IB burned out in garden	-0.126243	51.437394
+691	21:13	4 Knatchbull Road, Camberwell, SE5, London, UK	EB	20x6 feet of brick wall damaged	-0.097878	51.474428
+692	21:13	20 County Grove,  SE5, London, UK	EB	Our Lady of Mercy Convent: Building damaged	-0.098246	51.474962
+695	21:16	Longfellow Road e3, London, UK	IB	2x1 paving damage	-0.025822	51.575308
+696	21:21	Sandmere Road, Clapham, SW4, London, UK	IB	IB burned out in street	-0.126725	51.462416
+697	21:29	Acre Lane, Brixton, SW2, London, UK	-	IB on road unignited	-0.121626	51.459831
+698	21:32	22-24, Pllumstead Road, Plumstead SE18, London, UK	IB	two buildings damged	0.069981	51.481975
+699	21:32	29-65 Haddo Street, Greenwich SE10, London, UK	EB	18 cottages damaged	-0.013732	51.480051
+700	21:32	253 Leigham Court Road, Streatham, SW16, London, UK	IB	H. Day & Sons Furniture depositories: IB on road	-0.114318	51.430032
+701	21:34	Flat 5, 17, Cranworth Gardens, Brixton, SW9, London, UK	IB	6x4 roof damaged	-0.113814	51.475561
+702	21:35	Clinton Road, Tower Hamlets London E3, London, UK	-	Many buildings and contents in these thoroughfares damaged	-0.037415	51.527068
+703	21:37	Southwark, London SE1, London, UK	IB	2x1 paving damage	-0.087309	51.502594
+704	21:37	Newington Causeway, London SE1, , London, UK	EB	30x20 roadway damaged	-0.098786	51.497638
+705	21:40	Caldwell Street, Brixton SW9, London, UK	EB	26 private houses damaged	-0.114405	51.476885
+706	21:40	Caldwell St, London, UK	EB	20x20 roadway damaged	-0.115349	51.476979
+707	21:40	Caldwell St, London, UK	EB	South Met Gas. 4" main fractured	-0.115692	51.477019
+708	21:40	157 Ernest Street, E1, London, UK	IB	Top floor damaged	-0.041846	51.5216
+710	21:42	Odessa St, Southwark, London SE16, London, UK	IB	2 dumb barges sverely damaged	-0.033822	51.497614
+711	21:46	Bazeley Street, Poplar E14, London, UK	IB	Number of IB burned out on road	-0.010981	51.51011
+712	21:50	4 Southey Road, Brixton SW9, London, UK	EB	3 private houses damaged	-0.113144	51.476199
+713	21:50	Southey Road, Brixton SW9, London, UK	EB	20x20 roadway damaged	-0.113766	51.476226
+714	21:50	Southey Road, Brixton SW9, London, UK	EB	South Met Gas. 4" main fractured	-0.114217	51.476253
+715	21:51	146-150, Brixton Road, SW9, London, UK	EB	3 private houses damaged	-0.112609	51.475156
+718	21:51	Pratt Walk, London, UK	EB & IB	Owned by, Met. Police and Southern Railway. Range of 3 floor buildings, 300x200, used as garages and stores	-0.117062	51.4946
+719	22:00	Tunnel Avenue, Greenwich, SE10, London, UK	IB	Dumbarge "Alice" Humphery and Grey. A vessell of about 75 tons, laden with timber, severely damaged by the fire and submergedand 20x15 of wooden quay slightly damaged	0.005576	51.494179
+720	22:00	56 Rogers Road, Tooting, SW17, London, UK	IB	IB in yard	-0.173114	51.43176
+721	22:00	Deptford Church Street, SE8, London, UK	IB	Rag Merchants, Quantity of stock destroyed. 	-0.022804	51.478061
+722	22:00	18 Hereford Street, Bethnal Green, e2, London, UK	IB	Front room on 1st floor and contents damaged, roof part off (2x3)	-0.066174	51.524363
+723	22:02	Devons RD E3, London, UK	IB	2x1 ft of paving damaged	-0.018941	51.521477
+724	22:03	Cantrell RD E3, London, UK	IB	2x1 ft of tarmac damaged	-0.026983	51.521637
+727	22:09	Sandford Street SE14, London, UK	IB	1/4 acre of grass burned. 	-0.041256	51.48042
+728	22:09	Culloden Street, E14, London, UK	IB	Number of IB burned out on road	-0.007832	51.513671
+729	22:09	239 East India Dock Road, Poplar, E14, London, UK	IB	Back room on 1st floor damaged. 	-0.018937	51.5109
+731	22:17	Nunhead Lane, Camberwell SE15, London, UK	EB	A building, owned by wax paper manufacturers, severely damaged by explosion.	-0.060899	51.464263
+732	22:21	Lollard Street SE11, London, UK	IB	IB burned out in street	-0.113554	51.492215
+733	22:23	87 York Road, Lambeth SE1, London, UK	IB	IB in grounds	-0.11658	51.502202
+734	22:24	747, Commercial RD E14, London, UK	IB	British Sailors Society-Empire Memorial Hostel for Sailors- 2x1 ft of pathway slightly damaged, breakage in yard	-0.032471	51.512602
+737	22:30	Sandford Street SE14, London, UK	IB	1/4 acre of grass burned. 	-0.041235	51.480279
+738	22:30	20 Hereford Street, Bethnal Green, E2, London, UK	IB	House of 6 rooms and 1/2 of contents severely damaged	-0.066228	51.524393
+739	22:31	Silwood Street Rotherhithe Se16, London, UK	IB	IB burned out in street. 	-0.050495	51.488465
+740	22:31	Island Row E14, London, UK	IB	1x1 ft of paving slightly destroyed	-0.033578	51.511621
+741	22:34	Gallions Reach, Woolwich, S.E, London, UK	-	4 dumb barges and contents damaged and sunk	0.071601	51.50893
+742	22:36	Avonley Road, Newcross, SE14, London, UK	EB	South Eastern Hospital, Nurses Quarters and wards Nos. 1 & 10 damaged by explosion. 1 male and 4 females killed. 1 male and 2 femaies injured	-0.050389	51.479059
+743	22:40	47 Ordnance Crescent, Greenwich  SE10, London, UK	IB	Back room on 1st floor and contents damaged	0.001469	51.50005
+744	22:45	Berkshire Eoad, Hackney Wick E9, London, UK	IB	Rag and metal merchants- A quantity of stock damaged in yard	-0.025957	51.545451
+745	22:45	9 Franklin Street, Bromley, E3, London, UK	IB	Back room on 1st floor damaged with contents	-0.012527	51.527637
+746	22:47	Trinity Wharf Buoy, Limehouse Reach. E., London, UK	IB	2 dumb barges, unladen, damaged	0.008337	51.507946
+751	22:55	Evelina Road, Camberwell, SE15, London, UK	EB 	40x40 one floor building, severely damaged, used as a mission hall.	-0.054461	51.467418
+752	22:55	4 Stangate Street SE1, London, UK	IB	Minor fire and explosion damage	-0.116505	51.499138
+756	22:58	30 Rashmore Road, Charlton, SE7. 28, London, UK	IB	2 Private houses each with 6 rooms damaged. One male burned to death.	0.02676	51.486201
+759	23:00	Grays Inn Road WC1, London, UK	IB	anti aircraft shell, unexploded. 2x1 roadway damage, water mains damage	-0.121936	51.530423
+760	23:00	Hollydale Road, Peckham, SE15, London, UK	EB	80x60 three floor building damaged	-0.056231	51.46973
+761	23:00	Hollydale Road, Peckham SE15, London, UK	EB	18 private houses damaged	-0.05607	51.469455
+763	23:00	181 Wellmeadow Road, Catford, SE6, London, UK	EB & IB	House of eight rooms, back room on groung floor and contents damaged by fire	0.0029	51.439385
+764	23:00	Alnwick Road Eltham Se12, London, UK	-	quarter of acre of grass burned	0.02558	51.445293
+765	23:00	34 Winn Road Lee, SE12, London, UK	-	house of 7 rooms damaged	0.02282	51.442331
+766	23:00	31-37 Abernethy Road Lewisham Se13, London, UK	-	four houses, each with 6 rooms slightly damaged	0.001511	51.457382
+767	23:00	Stonhouse Street, Clapham, SW4, London, UK	-	Suspected presence of IB	-0.13701	51.46364
+771	23:08	107-111, Newington Butts, SE11, London, UK	IB	F & Tyler Furniture shop. 3 floor building 180x70, used as showrooms offices  store, damaged and roof off.	-0.102637	51.491894
+772	23:08	133-139 Newington Butts, SE11, London, UK	EB & IB	Furniture shop, 3 floor building 90x40 damaged	-0.102755	51.491999
+773	23:08	141, Newington Butts, SE11, London, UK	EB & IB	3 floors and basement damaged. 2/3 of content damaged	-0.1021	51.492146
+774	23:08	129-131, Newington Butts, SE11, London, UK	EB & IB	50x40 three floors of mens clothing shop damaged	-0.101296	51.492673
+775	23:08	2-8 Crampton Street, Southwark, SE17, London, UK	EB & IB	130x60 three floor building, shops and content damaged	-0.100182	51.490761
+776	23:08	86-102 Newington Butts, SE11, London, UK	EB & IB	10 shops and houses damaged	-0.10209	51.492161
+777	23:08	147 Walworth Road, SE17, London, UK	EB & IB	South East Southwark Conservative and Unionist Association. Club room and ground floor damaged	-0.097488	51.490934
+778	23:10	8-12 Dundas Road Camberwell SE15, London, UK	Eb	3 private houses damaged	-0.054743	51.470554
+779	23:10	105-113 Tyrwhitt Road, Brockley, SE4, London, UK	-	Five private houses severely damaged	-0.024663	51.462446
+780	23:10	Glenton Road, Leiwsham SE13, London, UK	IB	IB in street	0.000132	51.45915
+781	23:10	Tarn Street, Camberwell, Greater London, SE1, London, UK	IB	2x1 paving damage	-0.098165	51.496405
+782	23:10	Braganza Street, Se17, London, UK	IB	IB burned out in street	-0.103724	51.487376
+783	23:10	82 Reculver Road, Rotherhithe, SE16, London, UK	IB	Front of house and shop scorched	-0.049652	51.488269
+784	23:11	Westminster Bridge, SW1, London, UK	IB	Suspected presence of IB	-0.116518	51.501805
+785	23:11	215-217, Commercial Road, Stepney E1, London, UK	IB	Building of three floors and a shop and house of 7 rooms severely damaged	-0.059659	51.514935
+786	23:11	Tynte Street, Homerton E9, London, UK	IB	2x1 roof damage	-0.035408	51.547902
+787	23:12	Lewisham Hospital, Lewisham , SE13, London, UK	-	Bomb splinters	-0.016777	51.453062
+788	23:15	Rolt Street, Deptford, SE8, London, UK	IB	IB burned out in street. 	-0.035698	51.48324
+789	23:20	36-38 Cliffview Road, Lewisham SE13, London, UK	EB	2 private houses damaged	-0.022784	51.461472
+790	23:20	31 Amelia Street, Walworth Se17, London, UK	IB	Coal Merchants. Timber shed building50x30  used as storeand contents damaged	-0.097867	51.489991
+791	23:20	Carpenters Rd E15, London, UK	EB & IB	Waste Rubber Merchants- Some stock in yard and a range of buildings covering an area of about 200x100 feet severely damaged	-0.006516	51.538031
+792	23:21	Bedford Road, WC1, London, UK	IB	shop and house of 7 rooms damaged with contents, upper part of house slightly damaged	-0.114209	51.520123
+793	23:22	1 Philpot Street, Stepney, E1, London, UK	IB	Coal Merchant-Building of 2 floors about 60x 40 ft (used as workshops, office and store) and contents damaged by fire. Rest of building and contents slightly damaged	-0.058307	51.514905
+795	23:28	Wallis Road, Hackney Wick, E9, London, UK	IB	Sweet manufacturers- A building of 3 floors about 100x 40 ft(used as machine room, work room and store) third floor and contents severely damaged.	-0.025146	51.544039
+796	23:29	2 Leamore St, Hammersmith, w6, London, UK	IB	1st floor landing and contents slightly damaged, roof damage	-0.229809	51.49439
+797	23:30	140 Dorset House, Marylebone Road, NW1, London, UK	IB	The bomb bured out the 8ths floor verandah	-0.157821	51.512851
+798	23:30	Baker Street, w1, London, UK	-	fire caused by flame falling from aircraft	-0.156609	51.519862
+799	23:31	Seymour Buildings, Seymour Place, Westminister, London W1, London, UK	IB	Two bombs burnt out roof and back area	-0.163394	51.519359
+800	23:31	Addison Road, Kensington, w14, London, UK	IB	4x2 roadway damage 	-0.209149	51.499603
+802	23:32	Eade Road, Finsbury Park, N4, London, UK	IB	IB(unignited)	-0.091398	51.574434
+803	23:34	Crawford Street, w1, London, UK	IB	1x1 ft of damage to roadway	-0.160739	51.519579
+804	23:34	Holland Villas Road , Kensington W1, London, UK	IB	4x2 roadway damage 	-0.212246	51.503351
+805	23:34	158 Sussec Gardens, w2, London, UK	IB	bomb burned out on a waste ground	-0.173292	51.51524
+806	23:35	9 Kensington Palace Gardens, w8, London, UK	IB	4x2 ft of roof damage.	-0.190919	51.507784
+807	23:35	1-15 Haddo Terrace, Greenwich SE10, London, UK	EB	8 houses damaged	-0.01386	51.480317
+808	23:35	Prior Street Greenwich, SE10, London, UK	EB	South Met Gas Company: 40x30 carriageway. Gas destroyed	-0.010892	51.475931
+809	23:35	Vauxhall Walk, Lambeth, Se11, London, UK	IB	IB burned out in street	-0.120473	51.489403
+810	23:36	99-101 Cambridge heath Road, Bethnal Green, E2, London, UK	IB	B. and R. Goldfarb, Ltd. Wholesale tobacconists. 60x40 four floor building, used as showrooms offices and stores,. Two top floors and contnts damaged	-0.071246	51.525075
+811	23:38	94 Royal Hill, Greenwich SE10, London, UK	EB	Grocer, shop and house of 8 rooms	-0.009852	51.476533
+812	23:38	96 Royal Hill, Greenwich SE10, London, UK	EB	Baker, shop and house of 6 rooms	-0.009557	51.476423
+813	23:38	98 Royal Hill, Greenwich SE10, London, UK	EB	Greengrocer shop and house of 6 rooms damaged	-0.009567	51.476409
+814	23:39	Polygon Road, NW1, London, UK	IB	Back room on ground floor and contents damaged, 2x1  of roof damaged.	-0.133262	51.531509
+815	23:39	New Kent Road, Se1 and Trocadero Cinema , London, UK	EB	6x4 roadway and paving damaged. Cinema window broken	-0.099006	51.494864
+816	23:41	Steedman  Street, Se17, London, UK	IB	Coal Merchants. Timber shed building 30x20 used as storeand contents damaged	-0.098751	51.491723
+817	23:41	117 Walworth Road, Se17, London, UK	IB	2x1 roof damage	-0.09751	51.490968
+818	23:43	50, Rushey Gren, Catford, Se6, London, UK	-	Falling Shrapnel	-0.017633	51.448219
+819	23:45	Westferry Road, Docklands, London E14, London, UK	COB	Preserving manufacturers- building of two floors, 10 x 40 ft, used as workshops and stores. Top floor and contents damaged.	-0.018666	51.488147
+821	23:45	Pier Road, North Woolwich, E16, London, UK	IB	M. B Foster and Sons. Bottlers. 40x30 of deck planking damaged. Cutting away on quay side. 	0.060927	51.498897
+822	23:46	2 Athol Street, Poplar E14, London, UK	EB	4 private houses of 6 rooms severely damaged, Collapsed. 35 buildings damaged by explosion, 1 male severly injured, (since dead)	-0.006808	51.512271
+823	23:46	24-48 Dee Street, Poplar E14. 2-22., London, UK	EB	London Country Council. 18 Private houses of 6 rooms and contnts, garages damaged. One van, one car, a staff car all destoryed. 24 inch gas main, 4 inch service pipe, 80x60 roadway damaged. 76 buildings damaged. Firemen, Strutton and Westwood, severely injured, since dead. 2 males and 1 female air raid warden severely injured, since dead. 	-0.004239	51.514221
+824	23:46	 Culloden Street School, Poplar, E14. , London, UK	EB	London Country Council. 18 Private houses of 6 rooms and contnts, garages damaged. One van, one car, a staff car all destoryed. 24 inch gas main, 4 inch service pipe, 80x60 roadway damaged. 76 buildings damaged. Firemen, Strutton and Westwood, severely injured, since dead. 2 males and 1 female air raid warden severely injured, since dead. 	-0.017648	51.508946
+825	23:46	50 -68 and 41-71 Aberfeldy Street Poplar, E14., London, UK	EB	London Country Council. 18 Private houses of 6 rooms and contnts, garages damaged. One van, one car, a staff car all destoryed. 24 inch gas main, 4 inch service pipe, 80x60 roadway damaged. 76 buildings damaged. Firemen, Strutton and Westwood, severely injured, since dead. 2 males and 1 female air raid warden severely injured, since dead. 	-0.00565	51.5135
+826	23:46	2-36 and 1-37 Ettrick Street Poplar, E14, London, UK	EB	London Country Council. 18 Private houses of 6 rooms and contnts, garages damaged. One van, one car, a staff car all destoryed. 24 inch gas main, 4 inch service pipe, 80x60 roadway damaged. 76 buildings damaged. Firemen, Strutton and Westwood, severely injured, since dead. 2 males and 1 female air raid warden severely injured, since dead. 	-0.005833	51.514456
+827	23:48	139 Walworth Road Se17, London, UK	IB	Shop and house of 8 rooms damaged	-0.097435	51.490968
+828	23:48	30 Kenton Road, Hackney E9, London, UK	EB	Alarm Caused by unexploded bomb in private house	-0.044246	51.543879
+829	23:52	Mare Street, Hackney, E9, London, UK	EB	4 shops and 10 house severely damage. And 50 houses damaged by the explosion	-0.053831	51.547218
+831	23:52	9 Lyme Grove, Hackney , e9, London, UK	EB	Roadway and 1 private houses damaged	-0.053068	51.543017
+832	23:52	12. St. Thomas Square E9, London, UK	EB	Roadway and 1 private houses severely damaged, and 20 houses damaged	-0.053635	51.541072
+833	23:52	London Lane, Hackney, London E8, London, UK	EB	Roadway and 10 houses damaged	-0.057305	51.541966
+837	23:58	Eckington Gardens, Newcross SE14, London, UK	IB	6x6 of pavement damage, (Deptford Borough Council)	-0.047409	51.477389
+838	23:58	72-74 Ansdell Road, Peckham, SE15, London, UK	EB	2 private houses damaged	-0.054663	51.468479
+839	23:58	Valentine Road, Hackney E9, London, UK	EB	Roadway and 4 private houses severely damaged, and 20 houses damaged	-0.045117	51.544027
+840	23:58	Poole Road, London E9 7AE, London, UK	EB	Roadway and 3 private houses severely damaged, and 24 houses damaged	-0.045577	51.543372
+841	23:59	189, Sussex Gardens W2, London, UK	IB	2x1 damage on roof, balck room on 5th floor and contents damaged	-0.173569	51.514258
+842	23:59	Bale Rd, Tower Hamlets, London E1 4QJ, United Kingdom, London, UK	EB	Two houses each of 6 rooms and contents severely damaged. Many houses in this thoroughfare damaged by explosion	-0.039879	51.519896
+843	23:59	Benledi Street, Poplar E14, London, UK	EB & IB	57 buildings damaged by explosion. 4 persons severely injured, extricated by the Brigade and removed to hospital	-0.003157	51.514378

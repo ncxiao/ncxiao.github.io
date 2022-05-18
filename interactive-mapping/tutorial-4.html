@@ -57,12 +57,11 @@
 <li>Linking between graphs and maps</li>
 </ul>
 <h2 id="spatial-temporal-data">Spatial-temporal data</h2>
-<p>We are going to use the data of 24 hours of Blitz (bombing of London) on September 7, 1940. The data source is <a href="http://bombsight.org/data/sources/">http://bombsight.org/data/sources/</a>. A former student, Maxfield Barach, has geocoded the original data and reported that only 708 of the 843 bomb sights can be geocoded. My further clean-up of the data found that only 706 were good. This data is saved in a tab separated file (TSV) and the first three lines are like this:</p>
+<p>We are going to use the data of 24 hours of Blitz (bombing of London) on September 7, 1940. The data source is <a href="http://bombsight.org/data/sources/">http://bombsight.org/data/sources/</a>. A former student, Maxfield Barach, has geocoded the original data and reported that only 708 of the 843 bomb sights can be geocoded. My further clean-up of the data found that only 706 were good. This geocoded data is saved in a tab separated file (TSV) called <a href="bombs.tsv">bombs.tsv</a> and the first three lines are like this:</p>
 <pre><code><code><div>order	time	location	type	details	lng	lat
 1	0:08	43 Southwark Park Road, SE16, London, UK	IB	Grocers: 3x2 roof damaged	-0.068463	51.494531
 2	0:10	49 Southwark Park road, Bermondsey, SE16, London, UK	IB	Bakers: 3x2 roof damaged	-0.058463	51.494532
 </div></code></code></pre>
-<p>The link to this file is <a href="pages/bombs.tsv">here</a>.</p>
 <h2 id="map-the-bombs">Map the bombs</h2>
 <p>We first need to write the following HTML file. Let's call it <strong>bombs1.html</strong>.</p>
 <pre><code class="language-html"><div><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
@@ -75,9 +74,14 @@
         </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Bombs map<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css&quot;</span> /&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://d3js.org/d3.v3.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/leaflet@1.8.0/dist/leaflet.css&quot;</span>
+            <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==&quot;</span>
+            <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;&quot;</span>/&gt;</span>
+        <span class="hljs-comment">&lt;!-- Make sure you put this AFTER Leaflet&#x27;s CSS --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/leaflet@1.8.0/dist/leaflet.js&quot;</span>
+            <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==&quot;</span>
+            <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://d3js.org/d3.v7.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Bombs Map<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -92,7 +96,7 @@
 <pre><code class="language-js"><div><span class="hljs-comment">// Data source: http://bombsight.org/data/sources/</span>
 <span class="hljs-comment">// 24 hours of Blitz Sept 7th 1940</span>
 
-<span class="hljs-keyword">var</span> parseTime = d3.time.format(<span class="hljs-string">&quot;%B %d, %Y %I:%M %Z&quot;</span>).parse;
+<span class="hljs-keyword">var</span> parseTime = d3.timeParse(<span class="hljs-string">&quot;%B %d, %Y %I:%M %Z&quot;</span>);
 
 <span class="hljs-keyword">var</span> bombs_data;
 <span class="hljs-keyword">var</span> bombs_geojson;
@@ -115,9 +119,9 @@
     <span class="hljs-attr">weight</span>: <span class="hljs-number">2</span>
 }
 
-d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle_bombs</span>(<span class="hljs-params">error, data</span>) </span>{
+d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle_bombs</span>(<span class="hljs-params">data</span>) </span>{
+    alert(<span class="hljs-built_in">Object</span>.keys(data));
+    alert(data)
 	bombs_geojson = {
 		<span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;FeatureCollection&quot;</span>,
 		<span class="hljs-string">&quot;features&quot;</span>: []
@@ -142,7 +146,8 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
     });
     bombs_data = data;
     make_maps();
-}
+});
+
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">make_maps</span>(<span class="hljs-params"></span>) </span>{
 	map = L.map(<span class="hljs-string">&#x27;map&#x27;</span>);      <span class="hljs-comment">// create a map in the &quot;map&quot; div</span>
@@ -228,7 +233,7 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
             }
         </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Bomb types<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://d3js.org/d3.v3.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://d3js.org/d3.v7.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Bomb Types<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -244,7 +249,7 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
 <span class="hljs-comment">// Data source: http://bombsight.org/data/sources/</span>
 <span class="hljs-comment">// 24 hours of Blitz Sept 7th 1940</span>
 
-<span class="hljs-keyword">var</span> parseTime = d3.time.format(<span class="hljs-string">&quot;%B %d, %Y %I:%M %Z&quot;</span>).parse;
+<span class="hljs-keyword">var</span> parseTime = d3.timeParse(<span class="hljs-string">&quot;%B %d, %Y %I:%M %Z&quot;</span>);
 
 <span class="hljs-keyword">var</span> bombs_data;
 
@@ -255,9 +260,7 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
 <span class="hljs-keyword">var</span> svg;
 <span class="hljs-keyword">var</span> rects;
 
-d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle_bombs</span>(<span class="hljs-params">error, data</span>) </span>{
+d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle_bombs</span>(<span class="hljs-params">data</span>) </span>{
     data.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d, i</span>) </span>{
         d.order = +d[<span class="hljs-string">&quot;order&quot;</span>];
         d.lng = +d[<span class="hljs-string">&quot;lng&quot;</span>];
@@ -277,7 +280,7 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
 	bombs_types_array = keys.map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">v</span>) </span>{ <span class="hljs-keyword">return</span> [v, bombs_types[v]]; });
 
 	make_barchart();
-}
+});
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">make_barchart</span>(<span class="hljs-params"></span>) </span>{
 
@@ -293,23 +296,21 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
         .attr(<span class="hljs-string">&quot;width&quot;</span>, w + margin.left + margin.right)
         .attr(<span class="hljs-string">&quot;height&quot;</span>, h + margin.top + margin.bottom);
 
-    <span class="hljs-keyword">var</span> yScale = d3.scale.linear().
+    <span class="hljs-keyword">var</span> yScale = d3.scaleLinear().
         domain([<span class="hljs-number">0</span>, d3.max(bombs_types_array, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> d[<span class="hljs-number">1</span>]; })]).
         range([h, margin.top]);
 
-    <span class="hljs-keyword">var</span> yAxis = d3.svg.axis()
+    <span class="hljs-keyword">var</span> yAxis = d3.axisLeft()
         .scale(yScale)
-        .orient(<span class="hljs-string">&quot;left&quot;</span>)
         .ticks(<span class="hljs-number">3</span>);
 
-    xScale = d3.scale.ordinal()
+    xScale = d3.scaleBand()
         .domain(bombs_types_array.map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> d[<span class="hljs-number">0</span>]; }))
         <span class="hljs-comment">// .domain(keys)</span>
-        .rangeRoundBands([margin.left, w], <span class="hljs-number">0.05</span>);
+        .rangeRound([margin.left, w], <span class="hljs-number">0.05</span>);
 
-    xAxis = d3.svg.axis()
-        .scale(xScale)
-        .orient(<span class="hljs-string">&quot;bottom&quot;</span>);
+    xAxis = d3.axisBottom()
+        .scale(xScale);
 
     rects = svg.selectAll(<span class="hljs-string">&quot;rect&quot;</span>)
         .data(bombs_types_array)
@@ -318,7 +319,7 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
         .attr(<span class="hljs-string">&quot;x&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d, i</span>) </span>{<span class="hljs-keyword">return</span> xScale(d[<span class="hljs-number">0</span>]);})
         .attr(<span class="hljs-string">&quot;y&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{<span class="hljs-keyword">return</span> yScale(d[<span class="hljs-number">1</span>]);} )
         .attr(<span class="hljs-string">&quot;height&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{<span class="hljs-keyword">return</span> h-yScale(d[<span class="hljs-number">1</span>]);})
-        .attr(<span class="hljs-string">&quot;width&quot;</span>, xScale.rangeBand())
+        .attr(<span class="hljs-string">&quot;width&quot;</span>, xScale.bandwidth())
         .attr(<span class="hljs-string">&quot;fill&quot;</span>, <span class="hljs-string">&quot;steelblue&quot;</span>);
 
     rects.on(<span class="hljs-string">&quot;mouseover&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d,i</span>) </span>{
@@ -376,7 +377,7 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
         </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>D3 Time Series<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://d3js.org/d3.v3.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://d3js.org/d3.v7.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Time series<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -385,7 +386,6 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;debug&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-
 </div></code></pre>
 <p>And the javascript code is below (saved in <strong>bombs3.js</strong>):</p>
 <pre><code class="language-js"><div><span class="hljs-keyword">var</span> bombs_data;
@@ -393,11 +393,9 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
 <span class="hljs-keyword">var</span> svg;
 <span class="hljs-keyword">var</span> rects;
 
-<span class="hljs-keyword">var</span> parseTime = d3.time.format(<span class="hljs-string">&quot;%B %d, %Y %I:%M %Z&quot;</span>).parse;
+<span class="hljs-keyword">var</span> parseTime = d3.timeParse(<span class="hljs-string">&quot;%B %d, %Y %I:%M %Z&quot;</span>);
 
-d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle_bombs</span>(<span class="hljs-params">error, data</span>) </span>{
+d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
     data.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d, i</span>) </span>{
 		d.id = i;
         d.order = +d[<span class="hljs-string">&quot;order&quot;</span>];
@@ -409,7 +407,7 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
     bombs_data = data;
 
 	make_timechart();
-}
+});
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">make_timechart</span>(<span class="hljs-params"></span>) </span>{
 
@@ -420,21 +418,26 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
     <span class="hljs-keyword">var</span> w = total_w - margin.left - margin.right;
     <span class="hljs-keyword">var</span> h = total_h - margin.top - margin.bottom;
 
-    <span class="hljs-keyword">var</span> formatTime = d3.time.format(<span class="hljs-string">&quot;%H&quot;</span>);
+    <span class="hljs-keyword">var</span> formatTime = d3.timeFormat(<span class="hljs-string">&quot;%H&quot;</span>);
 
     <span class="hljs-keyword">var</span> hourExtent = d3.extent(bombs_data, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> d.time; });
 
     <span class="hljs-comment">// one bin per hour, for 24 hours in the day</span>
-    <span class="hljs-keyword">var</span> hourBins = d3.time.hours(d3.time.hour.offset(hourExtent[<span class="hljs-number">0</span>],-<span class="hljs-number">1</span>),
-                                 d3.time.hour.offset(hourExtent[<span class="hljs-number">1</span>],<span class="hljs-number">1</span>));
+    <span class="hljs-keyword">var</span> hourBins = d3.timeHours(d3.timeHour.offset(hourExtent[<span class="hljs-number">0</span>],-<span class="hljs-number">1</span>),
+                                 d3.timeHour.offset(hourExtent[<span class="hljs-number">1</span>],<span class="hljs-number">1</span>));
 
+    <span class="hljs-built_in">console</span>.log(hourBins);
+    
     <span class="hljs-comment">// a function to bin the data</span>
-    <span class="hljs-keyword">var</span> binByHour = d3.layout.histogram()
+    <span class="hljs-keyword">var</span> binByHour = d3.histogram()
     	.value(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> d.time; })
-    	.bins(hourBins);
+        .thresholds(hourBins);
 
-    <span class="hljs-comment">// construct the data for histogram</span>
-    <span class="hljs-keyword">var</span> histData = binByHour(bombs_data);
+    <span class="hljs-comment">// construct the histogram bins from the data</span>
+    <span class="hljs-keyword">var</span> histData = binByHour(bombs_data); 
+
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.keys(histData));
+    <span class="hljs-built_in">console</span>.log(histData);
 
     <span class="hljs-keyword">var</span> svg = d3.select(<span class="hljs-string">&quot;#timehisto&quot;</span>)
     	.append(<span class="hljs-string">&quot;svg&quot;</span>)
@@ -443,33 +446,32 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
     	.append(<span class="hljs-string">&quot;g&quot;</span>)
     	.attr(<span class="hljs-string">&quot;transform&quot;</span>, <span class="hljs-string">&quot;translate(&quot;</span> + margin.left + <span class="hljs-string">&quot;,&quot;</span> + margin.top + <span class="hljs-string">&quot;)&quot;</span>);
 
-    <span class="hljs-keyword">var</span> x = d3.time.scale().range([<span class="hljs-number">0</span>, w]);
+    <span class="hljs-keyword">var</span> x = d3.scaleTime().range([<span class="hljs-number">0</span>, w]);
     x.domain(d3.extent(hourBins));
-    <span class="hljs-keyword">var</span> xAxis = d3.svg.axis().scale(x)
-    	.orient(<span class="hljs-string">&quot;bottom&quot;</span>).tickFormat(formatTime);
+    <span class="hljs-keyword">var</span> xAxis = d3.axisBottom().scale(x)
+    	.tickFormat(formatTime);
 
-    <span class="hljs-keyword">var</span> y = d3.scale.linear().range([h, <span class="hljs-number">0</span>]);
-    y.domain([<span class="hljs-number">0</span>, d3.max(histData, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> d.y; })]);
-    <span class="hljs-keyword">var</span> yAxis = d3.svg.axis().scale(y)
-    	.orient(<span class="hljs-string">&quot;left&quot;</span>).ticks(<span class="hljs-number">6</span>);
+    <span class="hljs-keyword">var</span> y = d3.scaleLinear().range([h, <span class="hljs-number">0</span>]);
+    y.domain([<span class="hljs-number">0</span>, d3.max(histData, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> d.length; })]);
+    <span class="hljs-keyword">var</span> yAxis = d3.axisLeft().scale(y).ticks(<span class="hljs-number">6</span>);
 
     rects = svg.selectAll(<span class="hljs-string">&quot;rect&quot;</span>)
-    	.data(histData)
+    	.data(histData) 
     	.enter()
     	.append(<span class="hljs-string">&quot;rect&quot;</span>)
     	.attr(<span class="hljs-string">&quot;class&quot;</span>, <span class="hljs-string">&quot;bar&quot;</span>)
-    	.attr(<span class="hljs-string">&quot;x&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> x(d.x); })
-    	.attr(<span class="hljs-string">&quot;width&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> x(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(d.x.getTime() + d.dx))-x(d.x)-<span class="hljs-number">1</span>; })
-    	.attr(<span class="hljs-string">&quot;y&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> y(d.y); })
-    	.attr(<span class="hljs-string">&quot;height&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> h - y(d.y); });
+    	.attr(<span class="hljs-string">&quot;x&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> x(d.x0); })
+        .attr(<span class="hljs-string">&quot;transform&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;translate(&quot;</span> + <span class="hljs-number">0</span> + <span class="hljs-string">&quot;,&quot;</span> + y(d.length) + <span class="hljs-string">&quot;)&quot;</span>; }) <span class="hljs-comment">// move them down, otherwise will be hanging</span>
+        .attr(<span class="hljs-string">&quot;width&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> x(d.x1) - x(d.x0) -<span class="hljs-number">1</span> ; })
+        .attr(<span class="hljs-string">&quot;height&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> h - y(d.length); })
 
-    rects.on(<span class="hljs-string">&quot;mouseover&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d, i</span>) </span>{
+    rects.on(<span class="hljs-string">&quot;mouseover&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, d</span>) </span>{ <span class="hljs-comment">// event, datum</span>
     		d3.select(<span class="hljs-built_in">this</span>).style(<span class="hljs-string">&quot;fill&quot;</span>, <span class="hljs-string">&quot;red&quot;</span>);
-    		d3.select(<span class="hljs-string">&quot;#debug&quot;</span>).html(<span class="hljs-string">&quot;over: &quot;</span> + d.length + <span class="hljs-string">&quot; &quot;</span> + d + <span class="hljs-string">&quot;, &quot;</span> + i);
+    		d3.select(<span class="hljs-string">&quot;#debug&quot;</span>).html(<span class="hljs-string">&quot;Over: &quot;</span> + d.length + <span class="hljs-string">&quot; &quot;</span> + d + <span class="hljs-string">&quot;; event=&quot;</span> + e + <span class="hljs-string">&quot;. End.&quot;</span>);
     	})
-    	.on(<span class="hljs-string">&quot;mouseout&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d, i</span>) </span>{
+    	.on(<span class="hljs-string">&quot;mouseout&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, d</span>) </span>{
     		d3.select(<span class="hljs-built_in">this</span>).style(<span class="hljs-string">&quot;fill&quot;</span>, <span class="hljs-string">&quot;steelblue&quot;</span>);
-    		d3.select(<span class="hljs-string">&quot;#debug&quot;</span>).html(<span class="hljs-string">&quot;OUT: &quot;</span> + d.length + <span class="hljs-string">&quot; &quot;</span> + d[<span class="hljs-number">0</span>][<span class="hljs-string">&quot;id&quot;</span>] + <span class="hljs-string">&quot;, &quot;</span> + i);
+    		d3.select(<span class="hljs-string">&quot;#debug&quot;</span>).html(<span class="hljs-string">&quot;Out: d.length=&quot;</span> + d.length + <span class="hljs-string">&quot;, d &quot;</span> + d + <span class="hljs-string">&quot;; event=&quot;</span> + e);
     	});
 
     svg.append(<span class="hljs-string">&quot;g&quot;</span>)
@@ -490,6 +492,7 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
 
 </div></code></pre>
 <h2 id="linking-space-and-time">Linking space and time</h2>
+<p>Finally we will link bombs on the map and the bars on the histogram.</p>
 <pre><code class="language-html"><div><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
@@ -521,9 +524,18 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
 
         <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>D3 Test<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css&quot;</span> /&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://d3js.org/d3.v3.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://unpkg.com/leaflet@1.8.0/dist/leaflet.css&quot;</span>
+            <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==&quot;</span>
+            <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;&quot;</span>/&gt;</span>
+        <span class="hljs-comment">&lt;!-- Make sure you put this AFTER Leaflet&#x27;s CSS --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/leaflet@1.8.0/dist/leaflet.js&quot;</span>
+            <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==&quot;</span>
+            <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://d3js.org/d3.v7.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css&quot; /&gt;
+        &lt;script src=&quot;https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;http://d3js.org/d3.v3.min.js&quot;&gt;&lt;/script&gt; --&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
@@ -535,6 +547,7 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;debug&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+
 </div></code></pre>
 <p>And here is the JS:</p>
 <pre><code class="language-js"><div>
@@ -552,7 +565,7 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
 <span class="hljs-keyword">var</span> histData;
 <span class="hljs-keyword">var</span> ll_ids;
 
-<span class="hljs-keyword">var</span> parseTime = d3.time.format(<span class="hljs-string">&quot;%B %d, %Y %I:%M %Z&quot;</span>).parse;
+<span class="hljs-keyword">var</span> parseTime = d3.timeParse(<span class="hljs-string">&quot;%B %d, %Y %I:%M %Z&quot;</span>);
 
 <span class="hljs-keyword">var</span> bisectTime = d3.bisector(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> d; }).left;
 
@@ -572,10 +585,7 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
     <span class="hljs-attr">weight</span>: <span class="hljs-number">2</span>
 }
 
-d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle_bombs</span>(<span class="hljs-params">error, data</span>) </span>{
-
+d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
     bombs_geojson = {
     	<span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;FeatureCollection&quot;</span>,
     	<span class="hljs-string">&quot;features&quot;</span>: []
@@ -605,7 +615,7 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
 
 	make_timechart();
     make_maps();
-}
+});
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">make_timechart</span>(<span class="hljs-params"></span>) </span>{
 
@@ -616,21 +626,26 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
     <span class="hljs-keyword">var</span> w = total_w - margin.left - margin.right;
     <span class="hljs-keyword">var</span> h = total_h - margin.top - margin.bottom;
 
-    <span class="hljs-keyword">var</span> formatTime = d3.time.format(<span class="hljs-string">&quot;%H&quot;</span>);
+    <span class="hljs-keyword">var</span> formatTime = d3.timeFormat(<span class="hljs-string">&quot;%H&quot;</span>);
 
     <span class="hljs-keyword">var</span> hourExtent = d3.extent(bombs_data, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> d.time; });
 
     <span class="hljs-comment">// one bin per hour, for 24 hours in the day</span>
-    hourBins = d3.time.hours(d3.time.hour.offset(hourExtent[<span class="hljs-number">0</span>],-<span class="hljs-number">1</span>),
-                                 d3.time.hour.offset(hourExtent[<span class="hljs-number">1</span>],<span class="hljs-number">1</span>));
+    hourBins = d3.timeHours(d3.timeHour.offset(hourExtent[<span class="hljs-number">0</span>],-<span class="hljs-number">1</span>),
+                                 d3.timeHour.offset(hourExtent[<span class="hljs-number">1</span>],<span class="hljs-number">1</span>));
 
+    <span class="hljs-built_in">console</span>.log(hourBins);
+    
     <span class="hljs-comment">// a function to bin the data</span>
-    <span class="hljs-keyword">var</span> binByHour = d3.layout.histogram()
+    <span class="hljs-keyword">var</span> binByHour = d3.histogram()
     	.value(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> d.time; })
-    	.bins(hourBins);
+        .thresholds(hourBins);
 
-    <span class="hljs-comment">// construct the data for histogram</span>
-    histData = binByHour(bombs_data);
+    <span class="hljs-comment">// construct the histogram bins from the data</span>
+    histData = binByHour(bombs_data); 
+
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.keys(histData));
+    <span class="hljs-built_in">console</span>.log(histData);
 
     <span class="hljs-keyword">var</span> svg = d3.select(<span class="hljs-string">&quot;#timehisto&quot;</span>)
     	.append(<span class="hljs-string">&quot;svg&quot;</span>)
@@ -639,26 +654,32 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
     	.append(<span class="hljs-string">&quot;g&quot;</span>)
     	.attr(<span class="hljs-string">&quot;transform&quot;</span>, <span class="hljs-string">&quot;translate(&quot;</span> + margin.left + <span class="hljs-string">&quot;,&quot;</span> + margin.top + <span class="hljs-string">&quot;)&quot;</span>);
 
-    <span class="hljs-keyword">var</span> x = d3.time.scale().domain(d3.extent(hourBins)).range([<span class="hljs-number">0</span>, w]);
-    <span class="hljs-keyword">var</span> xAxis = d3.svg.axis().scale(x).orient(<span class="hljs-string">&quot;bottom&quot;</span>).tickFormat(formatTime);
+    <span class="hljs-keyword">var</span> x = d3.scaleTime().range([<span class="hljs-number">0</span>, w]);
+    x.domain(d3.extent(hourBins));
+    <span class="hljs-keyword">var</span> xAxis = d3.axisBottom().scale(x)
+    	.tickFormat(formatTime);
 
-    <span class="hljs-keyword">var</span> y = d3.scale.linear().domain([<span class="hljs-number">0</span>, d3.max(histData, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> d.y; })]).range([h, <span class="hljs-number">0</span>]);
-    <span class="hljs-keyword">var</span> yAxis = d3.svg.axis().scale(y).orient(<span class="hljs-string">&quot;left&quot;</span>).ticks(<span class="hljs-number">6</span>);
+    <span class="hljs-keyword">var</span> y = d3.scaleLinear().range([h, <span class="hljs-number">0</span>]);
+    y.domain([<span class="hljs-number">0</span>, d3.max(histData, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> d.length; })]);
+    <span class="hljs-keyword">var</span> yAxis = d3.axisLeft().scale(y).ticks(<span class="hljs-number">6</span>);
 
     rects = svg.selectAll(<span class="hljs-string">&quot;rect&quot;</span>)
-    	.data(histData)
+    	.data(histData) 
     	.enter()
     	.append(<span class="hljs-string">&quot;rect&quot;</span>)
-        .style(<span class="hljs-string">&quot;fill&quot;</span>, default_bombs_style[<span class="hljs-string">&quot;fillColor&quot;</span>])
-    	.attr(<span class="hljs-string">&quot;x&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> x(d.x); })
-    	.attr(<span class="hljs-string">&quot;width&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> x(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(d.x.getTime() + d.dx))-x(d.x)-<span class="hljs-number">1</span>; })
-    	.attr(<span class="hljs-string">&quot;y&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> y(d.y); })
-    	.attr(<span class="hljs-string">&quot;height&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> h - y(d.y); });
+        .attr(<span class="hljs-string">&quot;fill&quot;</span>, default_bombs_style[<span class="hljs-string">&quot;fillColor&quot;</span>])
+    	.attr(<span class="hljs-string">&quot;class&quot;</span>, <span class="hljs-string">&quot;bar&quot;</span>)
+    	.attr(<span class="hljs-string">&quot;x&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> x(d.x0); })
+        .attr(<span class="hljs-string">&quot;transform&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;translate(&quot;</span> + <span class="hljs-number">0</span> + <span class="hljs-string">&quot;,&quot;</span> + y(d.length) + <span class="hljs-string">&quot;)&quot;</span>; }) <span class="hljs-comment">// move them down, otherwise will be hanging</span>
+        .attr(<span class="hljs-string">&quot;width&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> x(d.x1) - x(d.x0) -<span class="hljs-number">1</span> ; })
+        .attr(<span class="hljs-string">&quot;height&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d</span>) </span>{ <span class="hljs-keyword">return</span> h - y(d.length); })
 
-    rects.on(<span class="hljs-string">&quot;mouseover&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d, i</span>) </span>{
+    rects.on(<span class="hljs-string">&quot;mouseover&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, d</span>) </span>{ <span class="hljs-comment">// event, datum</span>
     		d3.select(<span class="hljs-built_in">this</span>).style(<span class="hljs-string">&quot;fill&quot;</span>, highlight_bombs_style[<span class="hljs-string">&quot;fillColor&quot;</span>]);
-    		d3.select(<span class="hljs-string">&quot;#debug&quot;</span>).html(<span class="hljs-string">&quot;over: &quot;</span> + d.length + <span class="hljs-string">&quot; &quot;</span> + d + <span class="hljs-string">&quot;, &quot;</span> + i);
-            ll_ids[i].forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">dd</span>) </span>{
+    		d3.select(<span class="hljs-string">&quot;#debug&quot;</span>).html(<span class="hljs-string">&quot;Over: &quot;</span> + d.length + <span class="hljs-string">&quot; &quot;</span> + d.x0 + <span class="hljs-string">&quot;; event=&quot;</span> + e + <span class="hljs-string">&quot;. End.&quot;</span>);
+            <span class="hljs-comment">// get the index ix</span>
+            ix = bisectTime(hourBins, d.x0);
+            ll_ids[ix].forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">dd</span>) </span>{
                 l = bombs_layer.getLayer(dd);
         		l.setStyle(highlight_bombs_style);
         		<span class="hljs-keyword">if</span> (!L.Browser.ie &amp;&amp; !L.Browser.opera) {
@@ -666,10 +687,11 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
         		}
             })
     	})
-    	.on(<span class="hljs-string">&quot;mouseout&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d, i</span>) </span>{
+    	.on(<span class="hljs-string">&quot;mouseout&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e, d</span>) </span>{
     		d3.select(<span class="hljs-built_in">this</span>).style(<span class="hljs-string">&quot;fill&quot;</span>, default_bombs_style[<span class="hljs-string">&quot;fillColor&quot;</span>]);
-    		d3.select(<span class="hljs-string">&quot;#debug&quot;</span>).html(<span class="hljs-string">&quot;OUT: &quot;</span> + d.length + <span class="hljs-string">&quot; &quot;</span> + d[<span class="hljs-number">0</span>][<span class="hljs-string">&quot;id&quot;</span>] + <span class="hljs-string">&quot;, &quot;</span> + i);
-    	    ll_ids[i].forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">dd</span>) </span>{
+    		d3.select(<span class="hljs-string">&quot;#debug&quot;</span>).html(<span class="hljs-string">&quot;Out: d.length=&quot;</span> + d.length + <span class="hljs-string">&quot;, d &quot;</span> + d + <span class="hljs-string">&quot;; event=&quot;</span> + e);
+            ix = bisectTime(hourBins, d.x0);
+    	    ll_ids[ix].forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">dd</span>) </span>{
                 bombs_layer.resetStyle(bombs_layer.getLayer(dd));})
     	});
 
@@ -689,10 +711,12 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
     	.text(<span class="hljs-string">&quot;Number of Bombs&quot;</span>);
 }
 
+
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onEachBombsFeature</span>(<span class="hljs-params">feature, layer</span>) </span>{
     <span class="hljs-comment">// find the bin that contains this point and push the id to ll_ids</span>
     id = L.stamp(layer);
-    i = bisectTime(hourBins, bombs_data[feature.properties.id].time) - <span class="hljs-number">1</span>;
+    i = bisectTime(hourBins, bombs_data[feature.properties.id].time) - <span class="hljs-number">1</span>; <span class="hljs-comment">// find the right bin</span>
+
     ll_ids[i].push(id);
     layer.on({
         <span class="hljs-attr">mouseover</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
@@ -718,7 +742,9 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
 
             d3.select(<span class="hljs-string">&quot;#debug&quot;</span>).html(t + <span class="hljs-string">&quot;: &quot;</span> + bombs_data[feature_id].details);
     	    d3.selectAll(<span class="hljs-string">&quot;rect&quot;</span>)
-        		.filter(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d, i</span>) </span>{dt=t-d.x; <span class="hljs-keyword">return</span> (dt &lt; d.dx &amp;&amp; dt&gt;=<span class="hljs-number">0</span>); })
+        		.filter(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d, i</span>) </span>{
+                    hist_index = bisectTime(hourBins, t) - <span class="hljs-number">1</span>;
+                    <span class="hljs-keyword">return</span> (hist_index == i); })
         		.style(<span class="hljs-string">&quot;fill&quot;</span>, highlight_bombs_style[<span class="hljs-string">&quot;fillColor&quot;</span>]);
         },
         <span class="hljs-attr">mouseout</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
@@ -728,7 +754,9 @@ d3.tsv(<span class="hljs-string">&quot;bombs.tsv&quot;</span>, handle_bombs);
     	    ll_ids[hist_index].forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">dd</span>) </span>{
                 bombs_layer.resetStyle(bombs_layer.getLayer(dd));})
     	    d3.selectAll(<span class="hljs-string">&quot;rect&quot;</span>)
-        		.filter(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d, i</span>) </span>{dt=t-d.x; <span class="hljs-keyword">return</span> (dt &lt; d.dx &amp;&amp; dt&gt;=<span class="hljs-number">0</span>); })
+        		.filter(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">d, i</span>) </span>{
+                    hist_index = bisectTime(hourBins, t) - <span class="hljs-number">1</span>;
+                    <span class="hljs-keyword">return</span> (hist_index == i); })
         		.style(<span class="hljs-string">&quot;fill&quot;</span>, default_bombs_style[<span class="hljs-string">&quot;fillColor&quot;</span>]);
         }
     })
