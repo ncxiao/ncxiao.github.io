@@ -1,1 +1,101 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Quick Start - Leaflet</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+        .my-control {
+            background: #fff;
+            padding: 5px;
+        }
+	</style>
+
+	
+</head>
+<body>
+
+<div id="map" style="width: 100%; height: 100%"></div>
+
+<script>
+
+	const map = L.map('map').setView([39.972, -82.977], 16);
+
+	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+
+    var imageUrl = 'MtVernon_1951_manual_correction_low_res_x.png';
+    
+    var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
+    var altText = 'Stitched Sanborn maps around Mt Vernon Ave, Columbus, OH.';
+    var latLngBounds = L.latLngBounds([
+        [39.9772943137988150, -82.9607102347790288], 
+        [39.9657895179829907, -82.9921622814646440]]);
+
+    var imageOverlay = L.imageOverlay(
+        imageUrl, 
+        latLngBounds, 
+        {
+            opacity: 0.8,
+            alt: altText,
+            interactive: true
+    }).addTo(map);
+
+    L.Control.MyControl = L.Control.extend({
+        onAdd: function(map) {
+            var el = L.DomUtil.create('div', 'leaflet-bar my-control');
+
+            el.innerHTML = '<input id="slide" type="range" min="0" max="1" step="0.1" value="0.8" onchange="updateOpacity(this.value)">';
+
+            return el;
+        },
+
+        onRemove: function(map) {
+            // Nothing to do here
+        }
+        });
+
+    L.control.myControl = function(opts) {
+        return new L.Control.MyControl(opts);
+    }
+
+    L.control.myControl({
+        position: 'topright'
+        }).addTo(map);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+    function updateOpacity(value) {
+        // var interactive_layer = L.LayerGroup().getLayers()[0]; //In case you are using layer group. Also if you define the Layer group as Global variable, then you can call getLayers() directly.
+        // if(interactive_layer!=undefined)
+            imageOverlay.setOpacity(value);
+    } 
+
+</script>
+
+
+
+
+</body>
+</html>
