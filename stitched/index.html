@@ -35,15 +35,53 @@
 <div id="map" style="width: 100%; height: 100%"></div>
 
 <script>
+    L.Control.Layers.include({
+  getOverlays: function() {
+    // create hash to hold all layers
+    var control, layers;
+    layers = {};
+    control = this;
 
-	const map = L.map('map').setView([39.972, -82.977], 16);
+    // loop thru all layers in control
+    control._layers.forEach(function(obj) {
+      var layerName;
 
-	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		maxZoom: 19,
+      // check if layer is an overlay
+      if (obj.overlay) {
+        // get name of overlay
+        layerName = obj.name;
+        // store whether it's present on the map or not
+        return layers[layerName] = control._map.hasLayer(obj.layer);
+      }
+    });
+
+    return layers;
+  }
+});
+
+</script>
+
+
+<script>
+
+	const map = L.map('map', { zoomDelta: 0.25, zoomSnap: 0}).setView([39.972, -82.977], 16);
+
+	var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 20,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
 
-    var imageUrl = 'MtVernon_1951_manual_correction_low_res_xs_t.png';
+    var googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+        maxZoom: 20,
+        subdomains:['mt0','mt1','mt2','mt3']
+    });
+
+    var osmHOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        maxZoom: 20,
+        attribution: '© OpenStreetMap contributors, Tiles style by Humanitarian OpenStreetMap Team hosted by OpenStreetMap France'});
+
+    var imageUrl = 'MtVernon_1951_manual_correction_low_res_t.png';
+    var imageUrl_xs = 'MtVernon_1951_manual_correction_low_res_xs_t.png';
     
     var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
     var altText = 'Stitched Sanborn maps around Mt Vernon Ave, Columbus, OH.';
@@ -51,8 +89,17 @@
         [39.9772943137988150, -82.9607102347790288], 
         [39.9657895179829907, -82.9921622814646440]]);
 
-    var imageOverlay = L.imageOverlay(
-        imageUrl, 
+    // var imageOverlay = L.imageOverlay(
+    //     imageUrl, 
+    //     latLngBounds, 
+    //     {
+    //         opacity: 0.8,
+    //         alt: altText,
+    //         interactive: true
+    // });
+
+    var imageOverlay_xs = L.imageOverlay(
+        imageUrl_xs, 
         latLngBounds, 
         {
             opacity: 0.8,
@@ -60,36 +107,46 @@
             interactive: true
     }).addTo(map);
 
-    L.Control.MyControl = L.Control.extend({
-        onAdd: function(map) {
-            var el = L.DomUtil.create('div', 'leaflet-bar my-control');
+    var baseMaps = {
+        "OpenStreetMap": tiles,
+        "OpenStreetMap.HOT": osmHOT,
+        "Google Satellite": googleSat
+    };
 
-            el.innerHTML = '<input id="slide" type="range" min="0" max="1" step="0.1" value="0.8" onchange="updateOpacity(this.value)">';
+    var overlayMaps = {
+        "XLow resolution": imageOverlay_xs
+    };
 
-            return el;
-        },
-
-        onRemove: function(map) {
-            // Nothing to do here
-        }
-        });
-
-    L.control.myControl = function(opts) {
-        return new L.Control.MyControl(opts);
-    }
-
-    L.control.myControl({
-        position: 'topright'
-        }).addTo(map);
+    var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
+    
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
+    // Opacity control
+
+    L.Control.MyControl = L.Control.extend({
+        onAdd: function(map) {
+            var div = L.DomUtil.create('div', 'leaflet-bar my-control');
+
+            div.innerHTML = '<input id="slide" type="range" min="0" max="1" step="0.1" value="0.8" onchange="updateOpacity(this.value)">';
+            
+            // the following prevents event impacting the map (so we can drag the slider)
+            L.DomEvent.disableClickPropagation(div);
+            L.DomEvent.disableScrollPropagation(div);
+
+            return div;
+        },
+
+        onRemove: function(map) {
+        }
+    });
+    var opacity_slider = new L.Control.MyControl({position: 'topright'}).addTo(map);
+
     function updateOpacity(value) {
-        // var interactive_layer = L.LayerGroup().getLayers()[0]; //In case you are using layer group. Also if you define the Layer group as Global variable, then you can call getLayers() directly.
-        // if(interactive_layer!=undefined)
-            imageOverlay.setOpacity(value);
+        // imageOverlay.setOpacity(value);
+        imageOverlay_xs.setOpacity(value);            
     } 
 
 </script>
