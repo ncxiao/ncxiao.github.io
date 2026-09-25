@@ -7,4 +7,4 @@ This repository represents projects for web development.
 - Interactive mapping tutorials: [https://ncxiao.github.io/interactive-mapping](https://ncxiao.github.io/interactive-mapping)
 - Stitched Sanborn maps: [https://ncxiao.github.io/stitched](https://ncxiao.github.io/stitched) (Higher resolution maps at [here](https://geog-gis.asc.ohio-state.edu/sanborn-mtvernon/))
 - A COVID-19 dashboard [https://gis.osu.edu/COVID19-Dashboard/](https://gis.osu.edu/COVID19-Dashboard/) (external)
-- The minimalist's Leaflet demo [https://ncxiao.github.io/leaflet-demo](https://ncxiao.github.io/leaflet-demo)
+- A minimalist's Leaflet demo [https://ncxiao.github.io/leaflet-demo](https://ncxiao.github.io/leaflet-demo)
