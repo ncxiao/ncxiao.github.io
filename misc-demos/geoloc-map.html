@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Where is me?</title>
+    <!-- for mobile -->
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <style>
+        html, body { height: 100%; margin: 0; padding: 0 }
+        /* Style rules for screens smaller than 600px wide */
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 14px;
+                padding: 10px;
+            }
+            .column {
+                width: 100%; /* Stack columns vertically on mobile */
+            }
+        }
+        #map { height: 100% }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="geoloc-map-script.js"></script>
+</body>
+</html>
