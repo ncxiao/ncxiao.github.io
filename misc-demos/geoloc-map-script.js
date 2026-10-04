@@ -1,4 +1,3 @@
-
 // create a map in the "map" div
 const map = L.map('map', { 
     center: [40, -83], 
@@ -64,7 +63,7 @@ function successCallback(position) {
     if (position.coords.altitude)
         msg += `Altitude: ${position.coords.altitude.toFixed(2)} meters<br/>`
     if (position.coords.altitudeAccuracy)
-    	msg += `Altitude Accuracy: ${position.coords.altitudeAccuracy)} meters<br/>`
+    	msg += `Altitude Accuracy: ${position.coords.altitudeAccuracy} meters<br/>`
     if (position.coords.heading)
     	msg += `Heading: ${position.coords.heading}&deg;<br/>`
     if (position.coords.speed) {
