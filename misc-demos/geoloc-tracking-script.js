@@ -40,7 +40,7 @@ function errorCallback(error) {
         [error.TIMEOUT]: 'Request timeout',
         [error.UNKNOWN_ERROR]: 'Unknown error'
     };
-    document.getElementById("log") = `Error: ${msgs[error.code]}`;
+    document.getElementById("log").innerHTML = `Error: ${msgs[error.code]}`;
 }
 
 // Stop watching

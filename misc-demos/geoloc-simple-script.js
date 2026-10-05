@@ -1,5 +1,3 @@
-const log = document.getElementById("log");
-
 let options = {
     enableHighAccuracy: true,
     timeout: 45000
@@ -44,5 +42,5 @@ function errorCallback(error) {
         [error.TIMEOUT]: 'Request timeout',
         [error.UNKNOWN_ERROR]: 'Unknown error'
     };
-    document.getElementById("log") = `Error: ${msgs[error.code]}`;
+    document.getElementById("log").innerHTML = `Error: ${msgs[error.code]}`;
 }
